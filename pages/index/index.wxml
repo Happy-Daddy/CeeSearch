@@ -97,8 +97,8 @@
   <text>预测省内排名</text>
   </navigator>
 
-  <navigator>
-  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_zzy_grey.png?a=1'></image>
+  <navigator url='../find/discipline'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_zzy.png?a=1'></image>
   <text>找专业</text>
   </navigator>
 

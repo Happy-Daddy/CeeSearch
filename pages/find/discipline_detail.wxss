@@ -1,0 +1,61 @@
+/* pages/find/discipline.wxss */
+@import "../college/college_detail.wxss";
+
+.discipline_view{
+  background: none;
+  padding-left: 0;
+    margin-top: 0;
+    font-size: 40rpx;
+}
+.d_info{padding-top: 10rpx;}
+
+.d_info text{
+  display: block;
+  font-size: 32rpx;
+  color: #888;
+}
+
+.title_info{font-size: 32rpx;color: #333; padding-left: 30rpx;}
+
+.recommend_field .recommend_university{
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.zhpm{
+  padding-left:40rpx;
+float:right;
+
+}
+.university_title{
+  padding-top: 20rpx;
+}
+
+.fb_item{padding: 15rpx 0;}
+.fb_item text{font-size: 28rpx; color: #666; display: block; width: 100%;}
+
+.pecent_bar{width: calc(100% - 120rpx); float: left; height: 16rpx; border-radius: 8rpx; background: #dedede; margin-top: 15rpx;}
+.pecent_bar view{height: 16rpx; border-radius: 8rpx; background: #00bea1;}
+.pecent_num{width: 100rpx; text-align: right; float: right; color: #888; font-size: 30rpx;}
+
+.c_1_3{float: left; width: 33.33%; text-align: center; padding: 15rpx 0;}
+.circle_c{width: 200rpx; height: 200rpx; background: #00bea1; border-radius: 100rpx; margin: 0 auto; color: #fff; line-height: 200rpx; font-size: 40rpx;}
+.c_title{font-size: 34rpx; color: #666; margin-top: 30rpx; display: block;}
+.cc_2{background: #faa105;}
+.cc_3{background: #d82400; font-size: 34rpx;}
+
+
+.qs_container{
+  height: 500rpx;
+  padding: 0;
+}
+
+#mychart-dom-bar{
+  height: 500rpx;
+  overflow: hidden;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 500rpx;
+}

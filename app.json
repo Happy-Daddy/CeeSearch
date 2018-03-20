@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/find/discipline",
     "pages/index/index",
+    "pages/find/discipline_detail",
+    "pages/find/discipline",
+    
     "pages/index/news_detail",
     "pages/index/news",
     "pages/test/test_result",
@@ -25,7 +27,6 @@
     "pages/logs/logs",
     "pages/my/text_page",
     "pages/my/goalAndFavor"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
