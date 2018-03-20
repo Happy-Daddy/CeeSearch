@@ -197,38 +197,38 @@
     </view>
     <!-- ===招生简章================================ -->
     <view hidden="{{tabSelected != 3}}">
-      
-    <view class='text_zsjz'>
-    <!-- 把招生简章的内容放在这里================== -->
-    <rich-text>
-  <import src="../../wxParse/wxParse.wxml"/>
 
-<view class='zsjz_title {{zsjzView == 0 ? "active" : "" }}' id="zsjz_0"  bindtap='switchZsjz'>
-北京大学2017年浙江省“三位一体”综合评价招生简章
-</view>
+      <view class='text_zsjz'>
+        <!-- 把招生简章的内容放在这里================== -->
+        <rich-text>
+          <import src="../../wxParse/wxParse.wxml" />
 
-<view class='zsjz_content' hidden='{{zsjzView != 0}}'>
-<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
-<text class='close_content' id="sq_0" bindtap='switchZsjz'>收起</text>
-</view>
+          <view class='zsjz_title {{zsjzView == 0 ? "active" : "" }}' id="zsjz_0" bindtap='switchZsjz'>
+            北京大学2017年浙江省“三位一体”综合评价招生简章
+          </view>
 
-<view class='zsjz_title {{zsjzView == 1 ? "active" : "" }}' id="zsjz_1" bindtap='switchZsjz'>
-北京大学2017年“筑梦计划”招生简章
-</view>
+          <view class='zsjz_content' hidden='{{zsjzView != 0}}'>
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+            <text class='close_content' id="sq_0" bindtap='switchZsjz'>收起</text>
+          </view>
 
-<view class='zsjz_content' hidden='{{zsjzView != 1}}'>
-<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
-<text class='close_content' id="sq_1" bindtap='switchZsjz'>收起</text>
-</view>
+          <view class='zsjz_title {{zsjzView == 1 ? "active" : "" }}' id="zsjz_1" bindtap='switchZsjz'>
+            北京大学2017年“筑梦计划”招生简章
+          </view>
+
+          <view class='zsjz_content' hidden='{{zsjzView != 1}}'>
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+            <text class='close_content' id="sq_1" bindtap='switchZsjz'>收起</text>
+          </view>
 
 
-    </rich-text>
+        </rich-text>
 
-    
-    
-    
-    <!-- 把招生简章的内容放在这里-end================== -->
-    </view>
+
+
+
+        <!-- 把招生简章的内容放在这里-end================== -->
+      </view>
 
     </view>
 

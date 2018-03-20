@@ -450,6 +450,10 @@ margin: 20rpx 0;
   border-radius:0 18rpx 18rpx 0;
 }
 
+.my_tab.my_tab_col_2 > view{
+  width: 50%;
+}
+
 .my_tab.my_tab_col_4 > view{
   width: 25%;
 }

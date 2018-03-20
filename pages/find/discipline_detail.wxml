@@ -1,0 +1,191 @@
+<!--pages/find/discipline.wxml-->
+<view class="bg_white">
+  <view class='recommend_university u_list'>
+    <view class='university_view discipline_view'>
+      <text class='d_title'>复旦大学上海医学院</text>
+      <view class='d_info'>
+        <text class="">专业代码：080101</text>
+        <text class="">授予学位：理学或工学学士</text>
+
+      </view>
+      <text class='recommend_prof'>推荐专业：核工程与核技术  阿拉伯语</text>
+    </view>
+  </view>
+
+  <view class='my_tab my_tab_col_3'>
+    <view class='{{tabSelected == 0 ? "selected" : ""}}' id="0" bindtap='tabClick'>专业信息</view>
+    <view class='{{tabSelected == 1 ? "selected" : ""}}' id="1" bindtap='tabClick'>就业前景</view>
+    <view class='{{tabSelected == 2 ? "selected" : ""}}' id="2" bindtap='tabClick'>开设院校</view>
+
+  </view>
+
+  <view class='test_detail_container'>
+
+    <!-- ===专业信息================================ -->
+    <view class='wrapper_zy_30' hidden="{{tabSelected != 0}}">
+
+
+      <rich-text class='h2'>
+        专业介绍
+      </rich-text>
+
+      <rich-text>
+        复旦大学上海医学院始建于1927年，原为国立中央大学医学院，是中国创办的第一所国立大学医学院。1932年，国立中央大学医学院独立为国立上海医学院，为当时中国唯一的国立医学院。1939年，抗战爆发后，学院内迁至云南昆明；1940年辗转迁至四川重庆。抗战胜利，学院迁回上海，于1952年更名为上海第一医学院。1985年，上海第一医学院定名为上海医科大学。
+        <text class='read_more'>查看更多</text>
+      </rich-text>
+
+      <rich-text class='h2'>
+        男女比例
+      </rich-text>
+
+
+      <view class='ratio clearfix'>
+        <text class="students"></text>
+        <view>
+
+        </view>
+      </view>
+
+      <view class='ratio_value'>
+        <text class='male_num'> 男：56%</text>
+        <text>
+    <text class='male_value'>3</text>
+        <text>:</text>
+        <text class='female_value'>2</text>
+        </text>
+        <text class='female_num'>女：44%</text>
+
+      </view>
+    </view>
+
+    <!-- ===就业前景================================ -->
+    <view class='wrapper_zy_30' hidden="{{tabSelected != 1}}">
+
+
+      <rich-text class='h2'>
+        就业概况
+      </rich-text>
+
+      <view class='clearfix'>
+      
+      <view class='c_1_3'>
+      <view class='circle_c'>7.5k</view>
+      <text class='c_title'>毕业3年月薪</text>
+      </view>
+
+      <view class='c_1_3'>
+      <view class='circle_c cc_2'>北京</view>
+      <text class='c_title'>最多就业城市</text>
+      </view>
+
+      <view class='c_1_3'>
+      <view class='circle_c cc_3'>机械制造</view>
+      <text class='c_title'>最多就业行业</text>
+      </view>
+
+      </view>
+
+      <rich-text class='h2'>
+        就业方向
+      </rich-text>
+
+      <rich-text>
+        复旦大学上海医学院始建于1927年，原为国立中央大学医学院，是中国创办的第一所国立大学医学院。1932年，国立中央大学医学院独立为国立上海医学院，为当时中国唯一的国立医学院。1939年，抗战爆发后，学院内迁至云南昆明；1940年辗转迁至四川重庆。抗战胜利，学院迁回上海，于1952年更名为上海第一医学院。1985年，上海第一医学院定名为上海医科大学。
+        <text class='read_more'>查看更多</text>
+      </rich-text>
+
+      <rich-text class='h2'>
+        薪资趋势
+      </rich-text>
+
+      <view class="qs_container">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      </view>
+
+      <rich-text class='h2'>
+        就业城市
+      </rich-text>
+      <view class="qs_container">
+        <ec-canvas id="mychart-dom-bar2" canvas-id="mychart-bar2" ec="{{ ec2 }}"></ec-canvas>
+      </view>
+
+      <rich-text class='h2'>
+        行业分布
+      </rich-text>
+      <view class='fb_item clearfix'>
+        <text>土木、建筑、装修、市政工程</text>
+        <view class='pecent_bar'>
+          <view style='width:11.6%;'></view>
+        </view>
+        <view class='pecent_num'>
+          11.16%
+        </view>
+      </view>
+      <view class='fb_item clearfix'>
+        <text>机械制造/设计维修</text>
+        <view class='pecent_bar'>
+          <view style='width:22%;'></view>
+        </view>
+        <view class='pecent_num'>
+          22%
+        </view>
+      </view>
+      <view class='fb_item clearfix'>
+        <text>教育培训</text>
+        <view class='pecent_bar'>
+          <view style='width:19%;'></view>
+        </view>
+        <view class='pecent_num'>
+          19%
+        </view>
+      </view>
+
+
+
+    </view>
+
+    <!-- ===开设院校================================ -->
+    <view hidden="{{tabSelected != 2}}">
+      <view class=''>
+        <text class='title_info'>对本省招生的院校共2所</text>
+
+
+        <view class='recommend_field'>
+          <navigator url='../college/college_detail'>
+            <view class='recommend_university u_list'>
+              <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/fddx.png);'>
+                <text class='university_title'>复旦大学上海医学院</text>
+                <view class='university_info'>
+                  <text>上海 · 医药类</text>
+                  <text class='zhpm'>综合排名：<text>4</text> </text>
+
+                </view>
+
+              </view>
+            </view>
+          </navigator>
+
+          <navigator url='../college/college_detail'>
+
+            <view class='recommend_university u_list'>
+              <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/jtdx.png);'>
+                <text class='university_title  uni_goal'>上海交通大学</text>
+                <view class='university_info'>
+                  <text>上海 · 综合类</text>
+                  <text class='zhpm'>综合排名：<text>15</text> </text>
+                </view>
+
+              </view>
+            </view>
+
+          </navigator>
+
+
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+
+</view>
