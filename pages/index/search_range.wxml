@@ -89,6 +89,17 @@
  你超越了 <text>78%</text> 的同学
  </rich-text>
  </view>
+
+<view class='range_chart'>
+
+<text>北京市2017年文科高考分数人数分布图</text>
+
+<view class="qs_container">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      </view>
+
+</view>
+
  <view class="buttom_tip">
 <text>
 测排名根据往年数据计算所得，仅供参考

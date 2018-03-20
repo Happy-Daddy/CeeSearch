@@ -100,3 +100,30 @@
 
 .student_i{font-size: 32rpx; color: #666;}
 .student_i text{font-size: 28rpx; color: #00bea1; padding-left: 20rpx;}
+
+.range_chart{
+
+}
+.range_chart text{
+  font-size: 36rpx;
+  color: #666;
+  padding-bottom: 30rpx;
+
+}
+
+.qs_container{
+  height: 500rpx;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mychart-dom-bar{
+  height: 500rpx;
+  overflow: hidden;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 500rpx;
+}

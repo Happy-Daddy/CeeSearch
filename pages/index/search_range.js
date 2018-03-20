@@ -1,10 +1,46 @@
 // pages/index/search_range.js
+import * as echarts from '../../ec-canvas/echarts';
+
+let chart = null;
+
+function initChart(canvas, width, height) {
+  chart = echarts.init(canvas, null, {
+    width: width,
+    height: height
+  });
+  canvas.setChart(chart);
+
+  var option = {
+    xAxis: {
+      name: '(年)',
+      nameGap: 4,
+      type: 'category',
+      boundaryGap: false,
+      data: ['2013', '2014', '2015', '2016', '2017', '2018']
+    },
+    yAxis: {
+      name: '(元/月)',
+      type: 'value'
+    },
+    series: [{
+      data: [6000, 7000, 8000, 8300, 8500, 9200],
+      type: 'line',
+      areaStyle: {}
+    }]
+  };
+
+  chart.setOption(option);
+  return chart;
+}
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    ec: {
+      onInit: initChart
+    },
     items: [
 
       { name: 'wen', value: '我是文科生', checked: 'true' },
@@ -42,7 +78,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    setTimeout(function () {
+      // 获取 chart 实例的方式
+      console.log(chart)
+    }, 2000);
   },
 
   /**
