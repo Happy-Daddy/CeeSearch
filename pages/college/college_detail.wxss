@@ -61,7 +61,7 @@ page{
 .table_col_3{width: 15%; text-align: right;}
 
 /* 复杂的表格========================= */
- 
+.complex_table view, .complex_table text{overflow: hidden;}
 .complex_table .table_head{font-size: 30rpx; height: 150rpx; overflow: hidden; padding: 0;}
 .complex_table .table_head .table_col_1{ line-height: 150rpx; border-right: solid #ddd 1rpx; float: left;}
 .complex_table .table_col_1{width: 40%; padding: 0 20rpx; line-height: 42rpx;}

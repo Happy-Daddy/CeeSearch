@@ -294,6 +294,7 @@ margin: 20rpx 0;
 /* test_detail================= */
 .test_detail_container{
   padding: 50rpx 40rpx;
+  height: 100vh;
 }
 
 .test_detail_container .h1{

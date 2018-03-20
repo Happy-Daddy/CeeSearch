@@ -1,16 +1,16 @@
 <!--pages/test/test_detail.wxml-->
 <view class='directory_list_container' style="display:{{directoryView}}">
   <scroll-view scroll-y="ture" class='directory_list_div'>
-    <view class='director_list first_director'>
+    <view class='director_list first_director' bindtap='scrollToViewFn' data-id="t-1">
       个性特征描述
     </view>
-    <view class='director_list'>
+    <view class='director_list' bindtap='scrollToViewFn' data-id="t-2" >
       可能存在的盲点
     </view>
-    <view class='director_list'>
+    <view class='director_list' bindtap='scrollToViewFn' data-id="t-3" >
       功能运用
     </view>
-    <view class='director_list'>
+    <view class='director_list' bindtap='scrollToViewFn' data-id="t-4" >
       问题解决方式
     </view>
     <view class='director_list'>
@@ -44,7 +44,8 @@
   <text>{{closeText}}</text>
 </view>
 
-<view class='test_detail_container'>
+<!-- 详情正文============================= -->
+<scroll-view class='test_detail_container'  scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true"  >
   <rich-text class='h1'>
     ESFJ
   </rich-text>
@@ -54,7 +55,7 @@
 ——我能为您做些什么？
 </text>
 
-  <text class='h2'>
+  <text class='h2' id="t-1">
 个性特征描述
 </text>
 
@@ -70,7 +71,7 @@
     ESFJ型的人十分小心谨慎，也非常传统化，因而他们能恪守自己的责任与承诺。他们支持现存制度，往往是委员会或组织机构中积极主动和乐于合作的成员，他们重视并能保持很好的社交关系。他们不辞劳苦地帮助他人，尤其在遇到困难或取得成功时，他们都很积极活跃。
   </rich-text>
 
-  <text class='h2'>
+  <text class='h2' id="t-2" >
 可能存在的盲点
 </text>
 
@@ -82,7 +83,7 @@
     ESFJ型的人往往会忽视自己的情感，因为他们渴望帮助别人，使别人高兴。他们很难拒绝别人或向别人请求帮助，这是因为不希望冒犯或使别人失望。通常他们很难提出或接受建设性的意见，因为他们很个人化地去处理事物。当他们找不到改变生活的办法，就会很悲观失望。暂时退后一步思考问题，判定一些目标，这样会使他们得到新的前景。在努力帮助别人的过程中，ESFJ型的人有时会以专横和盛气凌人的态度表达他们的观点。因而，在帮助别人之前，最好看一看别人是否希望得到建议或帮助。
   </rich-text>
 
-  <text class='h2'>
+  <text class='h2' id='t-3'>
 工作中的优势
 </text>
 
@@ -129,11 +130,10 @@
 
 
 
-
-
-</view>
-
-
 <navigator url='/pages/test/test_result' class='white_line_btn green_btn white_grey_btn'>
   <text>返回</text>
 </navigator>
+
+</scroll-view>
+
+

@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/find/discipline_detail",
     "pages/find/discipline",
@@ -7,6 +8,7 @@
     "pages/index/news_detail",
     "pages/index/news",
     "pages/test/test_result",
+    "pages/test/test_detail",
     "pages/find/find",
     "pages/test/test_list",
     "pages/more_result/more_result",
@@ -21,7 +23,7 @@
     "pages/college/search_college",
     "pages/my/charge",
     "pages/my/my_coin",
-    "pages/test/test_detail",
+    
     "pages/test/test_introduce",
     "pages/test/test_home",
     "pages/logs/logs",

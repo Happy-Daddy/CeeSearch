@@ -3,4 +3,9 @@
 .white_grey_btn{
   position: relative;
   z-index: 1;
+  padding: 0;
+  padding-top: 20rpx;
+}
+.white_grey_btn text{
+  margin: 0;
 }

@@ -8,7 +8,8 @@ Page({
     directoryView:"none",
     toggleBtn:"showDirectory",
     closeClass:"",
-    closeText:"目录"
+    closeText:"目录",
+    toView:""
   },
   showDirectory:function(e){
     this.setData({
@@ -26,6 +27,14 @@ Page({
       closeText: "目录"
     });
   },
+  scrollToViewFn: function (e) {
+    var _id = e.target.dataset.id;
+    this.setData({
+      toView: _id
+    })
+    console.log(this.data.toView)
+
+  },  
   /**
    * 生命周期函数--监听页面加载
    */
