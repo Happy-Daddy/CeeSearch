@@ -1,0 +1,12 @@
+/* pages/my/edit_info.wxss */
+@import "../../style.wxss";
+
+.text_888{color: #888; font-weight: bold;}
+.white_line_btn{position: relative; margin:0; }
+.white_line_btn text{border: solid #ddd 1rpx; text-align: center; color: #666;}
+.green_btn text{color: #fff; border: none; margin-top: 40rpx; margin-bottom: 40rpx;}
+
+.tisi_text{padding:40rpx 20rpx; font-size: 32rpx; color: #666;}
+.tisi_text text{font-weight: bold; color: #00bea1;}
+button{background: none; padding: 0;}
+button:after{border:none;}

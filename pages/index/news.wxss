@@ -1,0 +1,60 @@
+/* pages/index/news.wxss */
+@import "../../style.wxss";
+/* @import "search_college.wxss"; */
+
+.filter_bar view text{font-size: 36rpx;}
+.page{padding: 30rpx; padding-top: 140rpx; background: #fff; color: #666;}
+.banner_img{width: 100%; height: 360rpx;background-size: cover; border-radius: 15rpx;}
+.news_list{margin-top: 20rpx;}
+.news_list navigator{
+  color: #666;
+  height: 130rpx;
+  line-height: 130rpx;
+  border-bottom: solid #ddd 1rpx;
+  overflow: hidden;
+}
+
+
+
+.news_list navigator .title_img{
+  height: 90rpx;
+  width: 120rpx;
+  background-size: cover;
+ float: left;
+  margin-top: 20rpx;
+}
+.news_list navigator text{
+ padding-left: 20rpx;
+ width: calc(100% - 120rpx);
+ float: left;
+}
+.news_list navigator.no_img text{
+  padding-left: 0;
+  width: 100%;
+}
+
+.one_news{
+  color: #666;
+  height: 180rpx;
+  border-bottom: solid #ddd 1rpx;
+  padding: 20rpx 0;
+  font-size: 36rpx;
+  
+}
+.one_news text{
+  float: left;
+  width: calc(100% - 220rpx);
+  margin: 10rpx 0;
+  line-height: 54rpx;
+  height: 160rpx;
+  overflow: hidden;
+}
+.one_news .title_img_right{
+  height: 150rpx;
+  width: 220rpx;
+  background-size: cover;
+  float: right;
+  margin: 15rpx 0;
+}
+
+.no_more{font-size: 28rpx; text-align: center;color: #ccc; margin-top: 20rpx; background: #fafafa; border-radius: 20rpx; padding: 15rpx;}

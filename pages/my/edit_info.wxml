@@ -1,0 +1,33 @@
+<!--pages/my/edit_info.wxml-->
+<view class='list_menu_container'>
+<navigator class="list_menu  list_middle  no_icon"  url='/pages/my/my_coin'>
+  <text>此处显示姓名</text> 
+</navigator>
+ 
+<navigator class="list_menu right_arrow list_middle  no_icon"  url='#'>
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{province}}">
+<text>省份</text> <text class="right_text text_888">{{province[index]}}</text>
+</picker>
+  
+</navigator>
+
+<navigator class="list_menu right_arrow list_last  no_icon"  url=''>
+<picker bindchange="bindPickerChangeWlk" value="{{wlk_index}}" range="{{wlk}}">
+  <text>文理科</text> <text class="right_text text_888">{{wlk[wlk_index]}}</text>
+  </picker>
+</navigator>
+
+
+</view>
+
+<view class='tisi_text'>
+<rich-text> <text>温馨提示：</text>为了保证数据的真实性，每位用户只可以更改自己的省份和文理科信息3次，当剩余修改次数用完后，您将不可以修改自己的信息。</rich-text>
+</view>
+
+
+ <button class='white_line_btn green_btn'>
+<text>保存修改（剩余修改次数：2）</text>
+</button>
+ <button url='' bindtap='back' class='white_line_btn'>
+<text>取消修改</text>
+</button>

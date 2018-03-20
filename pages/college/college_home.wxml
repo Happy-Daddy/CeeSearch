@@ -1,0 +1,200 @@
+<!--pages/college/college_home.wxml-->
+ <view class="page">
+
+  <view class="page__bd">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="请输入大学名称" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">请输入大学名称</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class='wrapper_zy_30'>
+<navigator url='search_college'  class='white_line_btn green_btn'>
+        <image src='http://p1n6cj41i.bkt.clouddn.com/phb.svg?a=1'></image>
+</navigator>
+</view>
+
+
+<view class='wrapper_zy_30'>
+
+
+
+<rich-text class='h2'>
+按特色选
+</rich-text>
+
+<view class='find_college_list clearfix'>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_985.svg'></image>
+  <text>985工程</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_211.svg'></image>
+  <text>211工程</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_syl.svg'></image>
+  <text>双一流院校</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_sylxk.svg'></image>
+  <text>双一流学科</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_jyb.svg?a=1'></image>
+  <text>教育部直属</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_zybw.svg?a=1'></image>
+  <text>中央部委</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_sd.svg?a=2'></image>
+  <text>自主招生试点</text>
+  </navigator>
+</view>
+
+<rich-text class='h2'>
+按地区选
+</rich-text>
+<view class='find_college_list clearfix'>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_bs.svg'></image>
+  <text>本省</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_zb.svg'></image>
+  <text>周边省市</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_yx.svg'></image>
+  <text>一线城市</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_qg.svg'></image>
+  <text>全国</text>
+  </navigator>
+  
+</view>
+
+<rich-text class='h2'>
+按类型选
+</rich-text>
+<view class='find_college_list clearfix'>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_zh.svg'></image>
+  <text>综合</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_lg.svg'></image>
+  <text>理工</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_nl.svg'></image>
+  <text>农林</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_yy.svg'></image>
+  <text>医药</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_sf.svg'></image>
+  <text>师范</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_lang.svg'></image>
+  <text>语言</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_cj.svg'></image>
+  <text>财经</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_zf.svg'></image>
+  <text>政法</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_ty.svg'></image>
+  <text>体育</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_ys.svg'></image>
+  <text>艺术</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_mz.svg'></image>
+  <text>民族</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_js.svg'></image>
+  <text>军事</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_qt.svg'></image>
+  <text>其它</text>
+  </navigator>
+</view>
+
+
+
+
+
+
+<rich-text class='h2'>
+按批次选
+</rich-text>
+<view class='find_college_list clearfix'>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_b1.svg'></image>
+  <text>本一批</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_b2.svg'></image>
+  <text>本二批</text>
+  </navigator>
+  <navigator url='college_filter'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/i_zk.svg'></image>
+  <text>专科批</text>
+  </navigator>
+</view>
+
+</view>
+
+
+
+
+

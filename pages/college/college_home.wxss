@@ -1,0 +1,27 @@
+/* pages/college/college_home.wxss */
+@import "../../weui.wxss";
+@import "../../style.wxss";
+@import "search_college.wxss";
+
+.white_line_btn {position: relative;
+height: 220rpx;
+margin-top:80rpx;
+margin-bottom:0;
+width:100%;
+bottom:40rpx;
+background: #00bea1 url(http://p1n6cj41i.bkt.clouddn.com/userinfo_bg.png) repeat-x; 
+ background-size: 10rpx; 
+padding-top: 20rpx;
+border-radius: 30rpx;
+}
+
+.white_line_btn image{
+  height: 200rpx;
+}
+
+.h2{padding: 20rpx 0; color: #333; font-size: 42rpx;}
+
+
+.find_college_list{padding-bottom: 40rpx;}
+.find_college_list navigator image{width:120rpx; height: 120rpx; display: block; margin: 0 auto; padding-bottom: 15rpx;}
+.find_college_list navigator{width: 25%; float: left;text-align: center;font-size: 30rpx; color: #666; padding: 20rpx 0;}

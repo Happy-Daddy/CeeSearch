@@ -1,0 +1,23 @@
+<!--pages/my/my_coin.wxml-->
+<view class='my_coin_container'>
+<image src='http://p1n6cj41i.bkt.clouddn.com/coins.svg'></image>
+<view class='mycoin_num'>
+<text>我的金币</text>
+<text class="coin_num">298</text>
+</view>
+</view>
+
+<view class='list_menu_container'>
+<navigator class="list_menu right_arrow list_middle no_icon"  url='charge'>
+  <text>充值</text>
+</navigator>
+<navigator class="list_menu right_arrow list_middle no_icon"  url='#'>
+  <text>分享赚取金币</text>
+</navigator>
+<navigator class="list_menu right_arrow list_middle no_icon"  url='#'>
+  <text>邀请好友赚取金币</text>
+</navigator>
+<navigator class="list_menu right_arrow list_last no_icon"  url='#'>
+  <text>每日签到赚取金币</text>
+</navigator>
+</view>

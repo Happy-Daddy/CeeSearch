@@ -1,0 +1,19 @@
+/* pages/test/test_list.wxss */
+@import "../../style.wxss";
+
+.ui-radio-list{
+  margin-top: 4rpx;
+}
+
+.ui-radio-list.ui-radio-list-small{
+  margin-top: 7rpx;
+}
+.ui-radio-list.ui-radio-list-large{
+  margin-top: 0;
+}
+
+progress{padding: 20rpx 30rpx 0 30rpx; font-size: 20rpx; color: #666; }
+.progress_bar{height: 52rpx; padding-right: 30rpx;}
+.progress_bar progress,.progress_bar text{float: left;}
+.progress_bar text{width: 110rpx; float: right; font-size: 28rpx; color: #999; line-height: 52rpx; text-align: right;}
+.progress_bar progress{width: 75%;}

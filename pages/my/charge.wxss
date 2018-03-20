@@ -1,0 +1,66 @@
+/* pages/my/charge.wxss */
+@import "../../style.wxss";
+
+.charge_list{
+  padding: 0 15rpx;
+}
+
+.box-1-3{
+  display: block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  padding: 10rpx 15rpx;
+  margin: 10rpx 0;
+}
+
+.box-1-3 .charge_btn{
+    background: #f6f6f6;
+  border:solid #c7c7c7 1px;
+  border-radius: 10rpx;
+  color: #888;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  display: block;
+  overflow: hidden;
+  line-height: 30rpx;
+}
+
+.box-1-3 .charge_btn .charge_coin{
+  display: inline-block;
+  padding-left: 50rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/coin.svg) no-repeat left center;
+  background-size: 40rpx;
+  font-size: 36rpx;
+  color: #ffb400;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+
+.box-1-3 .charge_btn .charge_rmb{
+  padding-top: 30rpx;
+  display: block;
+  font-size: 36rpx;
+  line-height: 30rpx;
+}
+
+.box-1-3 .charge_btn .charge_rmb rich-text{
+  /* padding: 3rpx 6rpx; */
+  border-radius: 10rpx; 
+  /* border: solid #aaa 1rpx; */
+  font-size: 24rpx;
+  color: #aaa;
+  margin-bottom: 4rpx;
+  display: inline-block;
+}
+
+.box-1-3 .charge_btn.selected{
+  background:rgba(0, 190, 161, .2);
+  border-color: #00bea1;
+  color: #00bea1;
+}
+
+.box-1-3 .charge_btn.selected .charge_rmb rich-text{
+color: #00bea1;
+}

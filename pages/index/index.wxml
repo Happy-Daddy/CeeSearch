@@ -1,0 +1,125 @@
+<!--pages/start/start.wxml-->
+ 
+
+
+<view class='index_page'>
+  <image class="top_title" src="http://p1n6cj41i.bkt.clouddn.com/top_title.png"></image>
+  <view class="search_field">
+    <view class="search_box">
+      <text class="h2_title">输入成绩总分</text>
+       
+      <text class='explan'>你最近一次月考/模拟考的成绩</text>
+      <input class="input_score" type='number' maxlength='3'></input>
+
+      <view class="section">
+
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{province}}">
+          <view class="picker">
+            <text>省份/直辖市：</text>
+            <text class='sf'>{{province[index]}}</text>
+          </view>
+        </picker>
+      </view>
+
+      <radio-group class="radio_wl" bindchange="radioChange">
+        <label class="ui-radio {{radioCheckVal==0?'active':''}}">
+          <radio value='0' checked='checked'></radio>我是文科生
+        </label>
+        <label class="ui-radio {{radioCheckVal==1?'active':''}}">
+          <radio value='1'></radio>我是理科生
+        </label>
+
+      </radio-group>
+
+      <button class='btn_green' hover-class='button-hover' bindtap='goResult'>立即查看推荐大学(29金币)</button>
+<view  class='t_free'>
+<text>金币余额: 58  </text>
+      <navigator url='/pages/my/text_page?param=getcoin'>如何获得金币？</navigator>
+</view>
+      
+
+    </view>
+  </view>
+
+</view>
+
+<!-- <view class='introduce'>
+  <text class='h3_title'>功能介绍</text>
+
+  <view class='intro_list'>
+
+    <view class='intro_content'>
+      <text class='intro_title'>智能推荐</text>
+      <text>使用教育部权威大数据库，根据你的月考/模拟考试的分数，智能分析你的成绩排名，同时结合历年高校招生大数据中，为你推荐合适的大学和专业。</text>
+    </view>
+  </view>
+
+  <view class='intro_list'>
+
+    <view class='intro_content intro_list_2'>
+      <text class='intro_title'>高校查询</text>
+      <text>全国高校信息、专业信息、历年招生信息等最新最全一手资料，随手可查。找到你心仪的大学，提前游览一番吧。</text>
+    </view>
+  </view>
+
+  <view class='intro_list'>
+
+    <view class='intro_content intro_list_3'>
+      <text class='intro_title'>设置目标高校</text>
+      <text>把你心仪的高校设为你的目标大学，每次考试后记得回来查看排名，看看离你的梦想是不是又近了一步？</text>
+    </view>
+  </view>
+
+  <view class='intro_list'>
+
+    <view class='intro_content intro_list_4'>
+      <text class='intro_title'>成绩和志愿分析报告</text>
+      <text>根据你的查询记录和目标大学、收藏的大学。通过真实大数据分析，智能生成详尽的分析报告，对于填报志愿极具参考价值。</text>
+    </view>
+  </view>
+</view> -->
+
+
+<view class='home_list clearfix'>
+  <navigator open-type='switchTab' url='../college/college_home'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_zdx.png?a=1'></image>
+  <text>找大学</text>
+  </navigator>
+
+
+  <navigator url='../test/test_home'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_cshzy.png?a=1'></image>
+  <text>测适合专业</text>
+  </navigator>
+
+  <navigator url='search_range'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_ycpm.png'></image>
+  <text>预测省内排名</text>
+  </navigator>
+
+  <navigator>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_zzy_grey.png?a=1'></image>
+  <text>找专业</text>
+  </navigator>
+
+  <navigator>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_zydz.png?a=3'></image>
+  <text>志愿定制</text>
+  </navigator>
+
+  <navigator url='news'>
+  <image src='http://p1n6cj41i.bkt.clouddn.com/icon_gkzx.png'></image>
+  <text>高考资讯</text>
+  </navigator>
+</view>
+
+ 
+<image class='comingsoon' mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/comingsoon.png'></image>
+
+ 
+
+<view class='to_login' style="display:none;">
+  <text class='to_login_t1'>登录后可保存你的查询记录</text>
+  <text class='to_login_t2'>以及解锁更多福利功能</text>
+  <button>去登录</button>
+</view>

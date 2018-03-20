@@ -1,0 +1,79 @@
+<!--pages/test/test_result.wxml-->
+<scroll-view scroll-y="true" class='main_content'>
+
+  <text class="test_h1">我的职业性格</text>
+
+  <text class='very_large_text'>
+ESFJ
+</text>
+
+  <text class='result_intro'>
+外倾 · 感觉 · 情感 · 判断
+</text>
+
+
+  <view class='result_detail_container'>
+
+    <view class='detail_list clearfix'>
+      <text class='detail_list_title'>个人能量指向</text>
+      <view class='detail_list_num'>
+        <text class='detail_indicator_title'>外倾·E </text>
+        <text class='detail_indicator_num'>45</text>
+        <text class='detail_indicator_title'>内倾·I </text>
+        <text class='detail_indicator_num low_num'>15</text>
+      </view>
+    </view>
+
+    <view class='detail_list clearfix'>
+      <text class='detail_list_title'>信息收集方式</text>
+      <view class='detail_list_num'>
+        <text class='detail_indicator_title'>感觉·S </text>
+        <text class='detail_indicator_num'>36</text>
+        <text class='detail_indicator_title'>直觉·N </text>
+        <text class='detail_indicator_num low_num'>24</text>
+      </view>
+    </view>
+
+    <view class='detail_list clearfix'>
+      <text class='detail_list_title'>个人决策方式</text>
+      <view class='detail_list_num'>
+        <text class='detail_indicator_title'>思维·T </text>
+        <text class='detail_indicator_num low_num'>12</text>
+        <text class='detail_indicator_title'>情感·F </text>
+        <text class='detail_indicator_num'>48</text>
+      </view>
+    </view>
+
+    <view class='detail_list clearfix'>
+      <text class='detail_list_title'>喜爱生活方式</text>
+      <view class='detail_list_num'>
+        <text class='detail_indicator_title'>判断·J </text>
+        <text class='detail_indicator_num'>37</text>
+        <text class='detail_indicator_title'>知觉·Q </text>
+        <text class='detail_indicator_num low_num'>23</text>
+      </view>
+    </view>
+
+
+  </view>
+
+
+
+<view class='suit_job_container'>
+  <text>适合的工作</text>
+  <rich-text>
+  保健·医师助理／牙医助理·言语病理学家·运动生理学家·家庭医生·护士·牙医·医用秘书等
+  </rich-text>
+</view>
+
+
+<view class='bottom_btn'>
+<navigator url='/pages/test/test_detail' class='white_line_btn green_btn'>
+        <text>查看详细解析</text>
+      </navigator>
+</view>
+
+
+
+</scroll-view>
+

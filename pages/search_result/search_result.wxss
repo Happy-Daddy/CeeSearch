@@ -1,0 +1,391 @@
+/* pages/search_result/search_result.wxss */
+@import "../../style.wxss";
+
+page{background: #fafafa;}
+.result_page {
+  background: #fafafa url(http://p1n6cj41i.bkt.clouddn.com/result_bg2.png) no-repeat;
+  background-size: 100%;
+  height: 452rpx;
+}
+
+.sf_white {
+  margin-left: 30rpx;
+  padding-left: 38rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/local_white.svg) no-repeat left center;
+  color: #fff;
+  background-size: 32rpx;
+}
+
+.result_score {
+  background: url(http://p1n6cj41i.bkt.clouddn.com/tree.svg) no-repeat center;
+  display: block;
+  height: 200rpx;
+  color: #fff;
+  font-size: 120rpx;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 15rpx;
+  line-height: 160rpx;
+  margin-top: 10rpx;
+}
+
+.result_score .wenli {
+  display: block;
+  font-size: 36rpx;
+  color: #ffd100;
+  font-weight: normal;
+  line-height: 0;
+}
+
+.result_score .fen {
+  font-size: 80rpx;
+  font-weight: lighter;
+}
+
+.search_time {
+  font-size: 32rpx;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 15rpx;
+}
+
+.top_line {
+  margin: 8rpx 30rpx 12rpx 30rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/top_line.png) no-repeat center;
+  display: block;
+  height: 16rpx;
+  background-size: cover;
+}
+
+.user_info{
+  padding-bottom: 90rpx;
+}
+
+.user_name {
+  margin-left: 30rpx;
+  color: #fff;
+  font-size: 34rpx;
+  padding-left: 50rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/face_white.svg) no-repeat left center;
+  background-size: 42rpx;
+
+}
+
+.coin_num_container {
+  float: right;
+  margin-right: 30rpx;
+  color: #fff;
+  font-size: 34rpx;
+  padding-left: 60rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/coin.svg) no-repeat left center;
+  background-size: 44rpx;
+  margin-top: 8rpx;
+}
+
+.coin_num_container .coin_num {
+  background: #ffb400;
+  padding: 5rpx 15rpx;
+  border-radius: 10rpx;
+}
+
+.coin_num text {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+
+
+.goal {
+  padding: 30rpx;
+  padding-top: 10rpx; 
+
+}
+
+/* .goal_name {
+  padding: 20rpx 0;
+  padding-left: 20rpx;
+  background: -webkit-linear-gradient(top, #e1f4f1, #fafafa);
+  
+  border-top: solid #ddd 1rpx;
+  border-bottom: dashed #ddd 1rpx;
+  display: block;
+  text-align: center;
+  color: #666;
+} */
+
+.goal_name{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/goal_bg_left.png?a=1),
+              url(http://p1n6cj41i.bkt.clouddn.com/goal_bg_right.png?a=1),
+              url(http://p1n6cj41i.bkt.clouddn.com/goal_bg_repeat.png);
+
+  background-repeat:no-repeat,
+                    no-repeat,
+                    repeat-x;
+
+  background-position:left center,
+                      right center,
+                      74rpx center;
+
+  background-size: 75rpx 68rpx,
+                    75rpx 68rpx,
+                    7rpx 68rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  color: #a27200;
+  font-size: 36rpx;
+  margin-bottom: 25rpx;
+}
+
+/* .goal_name text{
+  padding-left: 60rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/bar_home_s.png) no-repeat left center;
+  background-size: 50rpx;
+} */
+
+.university_view {
+  padding-left: 170rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/nologo.png) no-repeat left center;
+  background-size: 140rpx;
+  display: block;
+  height: 140rpx;
+  margin: 20rpx 0;
+  overflow: hidden;
+}
+
+.university_info {
+  font-size: 26rpx;
+  color: #666;
+  margin: 15rpx 0 20rpx 0;
+}
+
+.university_tag {
+  color: #fff;
+  font-size: 28rpx;
+  background: #ffd100;
+  padding: 4rpx 15rpx;
+  border-radius: 10rpx;
+  margin-left: 10rpx;
+}
+
+.probability {
+  background: #cf2700;
+  border-radius: 10rpx;
+  color: #fff;
+  height: 66rpx;
+  line-height: 66rpx;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+}
+
+.probability text {
+  font-size: 26rpx;
+}
+
+.probability text.probability_num {
+  font-size: 60rpx;
+  float: right;
+}
+
+.last_year {
+  font-size: 26rpx;
+  color: #666;
+  display: block;
+  padding-bottom: 20rpx;
+  border-bottom: solid #ddd 1px;
+}
+
+.last_year_num {
+  padding: 20rpx 0;
+}
+
+.last_year_num view {
+  float: left;
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: #666;
+  font-size: 26rpx;
+  font-weight: normal;
+}
+
+.last_year_num view text {
+  font-size: 48rpx;
+  font-weight: normal;
+}
+
+.gap {
+  background: #00bea1;
+  background: -webkit-linear-gradient(left, #00bea1, #efca01);
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.gap text {
+  font-size: 42rpx;
+  font-weight: bold;
+  float: right;
+}
+
+.recommend_field{
+  margin: 20rpx 0;
+  overflow: hidden;
+}
+
+.recommend_university{
+  margin: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid #ddd 1px;
+}
+
+.university_title{
+  font-size: 34rpx;
+  color: #444;
+  font-weight: bold;
+}
+
+.u_list .university_tag{
+  background: #aaa;
+  padding: 0 15rpx;
+}
+
+.u_list .university_info{
+  margin:6rpx 0 0 0;
+}
+
+.recommend_prof{
+  font-size: 26rpx;
+  color: #666;
+}
+
+.score_and_prob view{
+  float: left;
+  display: block;
+  width: 33.33%;
+  text-align: center;
+   color: #999;
+  font-size: 24rpx;
+}
+
+.score_and_prob{
+ padding: 10rpx 0;
+}
+
+.highlight_text{
+  display: block;
+  font-size: 46rpx;
+  color: #666;
+}
+
+.risk_index{
+  color: #fff;
+  padding: 0 5rpx;
+  border-radius: 6rpx;
+}
+
+.high_risk_text{
+  color: #cf2700;
+}
+.high_risk_background{
+  background: #cf2700;
+}
+.mid_risk_text{
+  color: #db8c03;
+}
+.mid_risk_background{
+  background: #db8c03;
+}
+.low_risk_text{
+  color: #2cc084;
+}
+.low_risk_background{
+  background: #2cc084;
+}
+
+button.btn_light_green::after{border:none;}
+.btn_light_green{  
+  border:solid #00bea1 1rpx;
+  background: #e1f4f1;
+  color: #00bea1;
+  font-size: 36rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+   border-radius: 15rpx;
+   margin: 30rpx;
+}
+
+.history_and_share{
+  color: #00bea1;
+  margin: 30rpx;
+  font-size: 34rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+}
+
+.history_and_share navigator{
+  /* float: left; */
+  padding-left: 44rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/history.svg) no-repeat left center;
+  background-size: 36rpx;
+}
+
+.history_and_share navigator.btn_share{
+  /* float: right; */
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/share.svg),
+  url(http://p1n6cj41i.bkt.clouddn.com/coin.svg);
+    background-repeat:no-repeat,
+                    no-repeat;
+
+  background-position:left center,
+                      right top;
+
+  background-size: 26rpx,
+                   40rpx;
+
+  display: inline;
+  padding-right: 50rpx;
+}
+
+.history_and_share navigator.btn_share image{
+  height: 40rpx;
+  width: 40rpx;
+display: inline-block;
+  /* float: right; */
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.buttom_tip{
+  color: #999;
+  font-size: 22rpx;
+  border-top: solid #ddd 1rpx;
+  padding-top: 20rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.buttom_tip text{
+    background: url(http://p1n6cj41i.bkt.clouddn.com/info_grey.svg) no-repeat left 22rpx;
+  background-size: 22rpx;
+  padding-left: 32rpx;
+  display: inline-block;
+  line-height: 22rpx;
+}
+
+
+.tab_field{
+  
+ 
+}
+
+.tab_field_fixed{
+ 
+   background: rgba(255, 255, 255, .9);
+   position: fixed;
+   top: 0;
+   width: 100%;
+}

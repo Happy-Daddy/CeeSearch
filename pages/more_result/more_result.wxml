@@ -1,0 +1,204 @@
+<view class='more_page' style='{{scroll_style}}'>
+  <!--pages/search_result/search_result.wxml-->
+  <view class='top_bar clearfix'>
+    
+
+    <picker class='range_picker' bindchange="bindRangeChange" value="{{range_index}}" range="{{range}}">
+          
+            <text class='range'><text>排序方式：</text>{{range[range_index]}}</text>
+         
+        </picker>
+    <button bindtap='showFilter'>筛选</button>
+  </view>
+
+  <!-- 大学列表 -->
+  <view class='recommend_field'>
+    <text class='i_title add_top'>32所大学</text>
+
+    <view class='recommend_university u_list'>
+      <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/bjdx.png);'>
+        <text class='university_title uni_favor'>北京大学</text>
+        <view class='university_info'>
+          北京 · 综合类
+          <text class='university_tag'>985</text>
+          <text class='university_tag'>211</text>
+          <text class='university_tag'>双一流</text>
+        </view>
+        <text class='recommend_prof'>推荐专业：核工程与核技术  阿拉伯语</text>
+      </view>
+    </view>
+
+    <view class='recommend_university u_list'>
+      <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/qhdx.png);'>
+        <text class='university_title'>清华大学</text>
+        <view class='university_info'>
+          北京 · 综合类
+          <text class='university_tag'>985</text>
+          <text class='university_tag'>211</text>
+          <text class='university_tag'>双一流</text>
+        </view>
+        <text class='recommend_prof'>推荐专业：核工程与核技术  阿拉伯语</text>
+      </view>
+    </view>
+
+    <view class='recommend_university u_list'>
+      <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/zjdx.png);'>
+        <text class='university_title uni_favor'>浙江大学</text>
+        <view class='university_info'>
+          浙江 · 综合类
+          <text class='university_tag'>985</text>
+          <text class='university_tag'>211</text>
+          <text class='university_tag'>双一流</text>
+        </view>
+        <text class='recommend_prof'>推荐专业：核工程与核技术  阿拉伯语</text>
+      </view>
+    </view>
+
+    <view class='recommend_university u_list'>
+      <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/jtdx.png);'>
+        <text class='university_title  uni_goal'>上海交通大学</text>
+        <view class='university_info'>
+          上海 · 综合类
+          <text class='university_tag'>985</text>
+          <text class='university_tag'>211</text>
+          <text class='university_tag'>双一流</text>
+        </view>
+        <text class='recommend_prof'>推荐专业：核工程与核技术  阿拉伯语</text>
+      </view>
+    </view>
+
+    <view class='recommend_university u_list'>
+
+
+      <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/fddx.png);'>
+        <text class='university_title'>复旦大学</text>
+        <view class='university_info'>
+          上海 · 综合类
+          <text class='university_tag'>985</text>
+          <text class='university_tag'>211</text>
+
+        </view>
+        <text class='recommend_prof'>推荐专业：汉语言文学  戏剧影视文学</text>
+      </view>
+
+
+
+    </view>
+
+    <view class='recommend_university u_list'>
+
+
+      <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/njdx.png?a=1);'>
+        <text class='university_title'>南京大学</text>
+        <view class='university_info'>
+          江苏 · 综合类
+          <text class='university_tag'>985</text>
+
+        </view>
+        <text class='recommend_prof'>推荐专业：匈牙利语  葡萄牙语  荷兰语</text>
+      </view>
+
+
+    </view>
+  </view>
+
+
+
+  <view class='history_and_share'>
+    <view class='clearfix'>
+      <!-- <navigator>历史查询记录</navigator> -->
+      <navigator class='btn_share'>分享赚取金币
+        <!-- <image src='http://p1n6cj41i.bkt.clouddn.com/coin.svg'></image> -->
+      </navigator>
+    </view>
+
+    <view class="buttom_tip">
+      <text>
+推荐来源于历年高考真实数据，仅供参考
+</text>
+    </view>
+
+    <button class='btn_green' hover-class='button-hover' bindtap='backHome'>再次查询</button>
+
+  </view>
+
+
+
+
+</view>
+
+
+
+<!-- 筛选遮罩 -->
+<view animation="{{slideDown}}"  id='filter_container' style='{{filter_display}}' >
+  <view class='top_bar filter_top'>
+    <text>筛选</text>
+    <button bindtap='filter_done'>完成</button>
+  </view>
+
+   <view class='filter_type clearfix'>
+    <text>高校所在地</text>
+
+    
+    
+
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{province}}">
+          <view class='filter_location'>
+             
+            {{province[index]}}
+         </view>
+        </picker>
+    
+   
+  </view>
+
+  <view class='filter_type clearfix'>
+    <text>高校标签</text>
+
+    <view>
+      <text>985</text>
+    </view>
+    <view class='filter_selected'>
+      <text>211</text>
+    </view>
+    <view>
+      <text>双一流</text>
+    </view>
+  </view>
+
+    <view class='filter_type clearfix'>
+    <text>录取批次</text>
+
+    <view>
+      <text>提前批</text>
+    </view>
+    <view class='filter_selected'>
+      <text>第一批</text>
+    </view>
+    <view class='filter_selected'>
+      <text>第二批</text>
+    </view>
+    <view>
+      <text>第三批</text>
+    </view>
+    <view>
+      <text>专科</text>
+    </view>
+  </view>
+
+    <view class='filter_type clearfix'>
+    <text>录取风险</text>
+
+    <view>
+      <text>高风险</text>
+    </view>
+    <view class='filter_selected'>
+      <text>中风险</text>
+    </view>
+    <view>
+      <text>低风险</text>
+    </view>
+  </view>
+
+
+</view>

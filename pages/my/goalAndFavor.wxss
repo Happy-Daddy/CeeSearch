@@ -1,0 +1,4 @@
+/* pages/my/goalAndFavor.wxss */
+@import "../../style.wxss";
+@import "../more_result/more_result.wxss";
+@import "../college/search_college.wxss";

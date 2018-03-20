@@ -1,0 +1,39 @@
+/* pages/my/my_page.wxss */
+@import "../../style.wxss";
+
+.user_info {
+  height: 400rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/userinfo_bg.png) repeat-x;
+  background-size: auto 400rpx;
+  text-align: center;
+}
+
+.user_info image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  box-shadow: 2.5px 4.33px 15px 0px rgba(40, 40, 40, 0.09);
+  border: solid #fff 10rpx;
+  margin-top: 10rpx;
+}
+
+.user_info text{
+  color: #fff;
+  font-size: 40rpx;
+    display: block;
+margin-top: 15rpx;
+}
+
+.user_info .student_wl text,.user_info .student_wl navigator{
+  font-size: 30rpx; 
+  display: inline-block;
+  color: #fff;
+}
+
+.user_info .student_wl navigator{
+  margin-left: 30rpx;
+  background: #fff;
+  color: #8e70ec;
+  border-radius: 10rpx;
+  padding: 0 8rpx;
+}

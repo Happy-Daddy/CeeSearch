@@ -1,0 +1,22 @@
+<!--pages/test/test_home.wxml-->
+<view class='main_content'>
+
+<text class="test_h1">MBTI职业性格测试</text>
+<image class='test_img' src='http://p1n6cj41i.bkt.clouddn.com/test_img.png' mode='widthFix' ></image>
+
+<rich-text class="test_intro">
+        我性格内向/外向，适合什么工作？”“哪些职业正好匹配我的性格？”“以我的个性从事什么行业好？”“我性格中的优势和劣势是什么？”“我是不是该继续现在从事的职业？” 不论是正待走进职场的毕业生，还是工作了一段时间的人，面对这类问题都会感到困惑——性格因素和职业选择之间到底存在什么样的关联呢？
+</rich-text>
+
+
+
+<navigator class='withe_green_btn'>
+了解更多
+</navigator>
+
+<navigator url='/pages/test/test_introduce' class='white_line_btn'>
+<text>开始测试</text>
+</navigator>
+
+</view>
+

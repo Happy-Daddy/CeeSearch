@@ -1,0 +1,158 @@
+<!--pages/index/news.wxml-->
+<view class='clearfix' style="overflow:hidden; ">
+
+  <view class="filter_bar filter_bar_2 tab_bar">
+    <view id="0" bindtap='navTabClick' class="{{navTabSelected == 0 ? 'selected' : ''}}">
+      <text>快讯 </text>
+    </view>
+    <view id="1" bindtap='navTabClick' class="{{navTabSelected == 1 ? 'selected' : ''}}">
+      <text>必知 </text>
+    </view>
+  </view>
+</view>
+
+<view class='page' hidden='{{navTabSelected != 0}}'>
+
+<navigator url='news_detail' class='banner_img' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/newsbanner1.png);'></navigator>
+
+<view class='news_list'>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台发生的非阿萨德飞...</text>
+</navigator>
+
+</view>
+
+<navigator class='one_news' url='news_detail'>
+  <text>全国18省高考改革方案出台，高考圈全国18省高考改革方案出台。高考圈全国...</text>
+  <view class='title_img_right' style='background-image:url(http://n.sinaimg.cn/edu/transform/w300h200/20180209/yNTx-fyrkuxs7709373.jpg);'></view>
+</navigator>
+
+<view class='news_list'>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台发生的非阿萨德飞...</text>
+</navigator>
+
+</view>
+
+<text class='no_more'>没有更多了</text>
+
+</view>
+
+<!-- 我是tab的分割线============================================== -->
+
+
+<view class='page' hidden='{{navTabSelected != 1}}'>
+
+
+<navigator url='news_detail' class='banner_img' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/newsbanner2.png);'></navigator>
+
+<view class='news_list'>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail'>
+<view class='title_img'  style='background-image:url(http://i.epochtimes.com/assets/uploads/2015/06/1506140747142504-600x400.jpg);'></view>
+<text>全国18省高考改革方案出台发生的非阿萨德飞...</text>
+</navigator>
+
+</view>
+
+<navigator class='one_news' url='news_detail'>
+  <text>全国18省高考改革方案出台，高考圈全国18省高考改革方案出台。高考圈全国...</text>
+  <view class='title_img_right' style='background-image:url(http://n.sinaimg.cn/edu/transform/w300h200/20180209/yNTx-fyrkuxs7709373.jpg);'></view>
+</navigator>
+
+<view class='news_list'>
+
+<navigator url='news_detail' class='no_img'>
+ 
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail' class='no_img'>
+ 
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail' class='no_img'>
+ 
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail' class='no_img'>
+ 
+<text>全国18省高考改革方案出台...</text>
+</navigator>
+
+<navigator url='news_detail' class='no_img'>
+ 
+<text>全国18省高考改革方案出台发生的非阿萨德飞...</text>
+</navigator>
+
+</view>
+
+<text class='no_more'>没有更多了</text>
+
+</view>

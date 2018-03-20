@@ -1,0 +1,261 @@
+/* pages/college/college_detail.wxss */
+@import "../../weui.wxss";
+@import "../../style.wxss";
+@import "search_college.wxss";
+@import "../more_result/more_result.wxss";
+
+page{
+  background: #fff;
+}
+.university_title{margin-bottom: 20rpx; display: block;}
+.zhpm{float: none; padding-left: 0; padding-right: 20rpx; }
+.university_view{height: 155rpx;}
+.u_list .university_tag{padding: 3rpx 10rpx;}
+
+.test_detail_container{
+  /* overflow: hidden; */
+  padding: 0 0 150rpx 0 ;
+  margin-top: 20rpx;
+}
+
+.test_detail_container .h2{
+  padding-top: 20rpx;
+}
+
+.favor_s{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/favor.svg);
+  color: #ffb600;
+}
+.favor_s::before{
+  content: "已";
+}
+
+.goal_s{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/goal_icon.svg);
+  color: #00bea1;
+}
+.goal_s::before{
+  content: "已";
+}
+
+.right_arrow:after{
+  content: url(http://p1n6cj41i.bkt.clouddn.com/right_arrow.svg);
+  display: block;
+  height: 30rpx;
+  width: 30rpx;
+  float: right; 
+  margin-right: 30rpx;
+  margin-top: 5rpx;
+}
+.pick_type text{
+  padding-left: 30rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+
+
+.pick_type{margin-bottom: 20rpx;}
+.table_col_1{width: 70%;}
+.table_col_2{width: 15%; text-align: right;}
+.table_col_3{width: 15%; text-align: right;}
+
+/* 复杂的表格========================= */
+ 
+.complex_table .table_head{font-size: 30rpx; height: 150rpx; overflow: hidden; padding: 0;}
+.complex_table .table_head .table_col_1{ line-height: 150rpx; border-right: solid #ddd 1rpx; float: left;}
+.complex_table .table_col_1{width: 40%; padding: 0 20rpx; line-height: 42rpx;}
+.complex_table .table_col_2{width: 10%;}
+.complex_table .table_col_3{width: 50%;} 
+.complex_table .table_head .table_col_2{line-height: 36rpx; height: 150rpx; text-align: center; padding-top: 34rpx;  overflow: hidden;}
+.complex_table .table_head .table_col_3{
+  float: left;
+text-align: center;
+}
+
+
+.col_title{width: 100%; border-bottom: solid #ddd 1rpx; height: 80rpx; line-height: 80rpx;border-left: solid #ddd 1rpx;}
+.col_col_4_1{float: left; width: 25%; border-left: solid #ddd 1rpx; line-height: 70rpx;}
+
+
+.complex_table .table_tr{border-bottom: solid #ddd 1rpx; height: 225rpx; padding: 0;}
+.complex_table .table_tr .table_col_1{ border-right: solid #ddd 1rpx; height: 225rpx; float: left;padding-top: 20rpx; position: relative;display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/ }
+/* .complex_table .table_tr .table_col_1 rich-text{} */
+.complex_table .table_tr .table_col_2{float:left; height: 225rpx; padding-top: 80rpx; text-align: center;}
+.complex_table .table_tr .table_col_3{float: left; text-align: center; height: 225rpx;}
+
+
+.complex_table .table_tr .row_row_3_1 .col_col_4_1{height: 100%;}
+.complex_table .table_tr .row_row_3_1 .col_col_4_1:first-of-type{font-size: 28rpx;}
+.complex_table .table_tr .row_row_3_1{border-bottom: solid #ddd 1rpx; height: 33.33%;}
+
+
+/* 复杂的表格-end========================== */
+
+
+
+.table_fsx text{height: 90rpx;}
+.table_fsx .table_col_1{width: 50%;}
+.table_fsx .table_col_2{width: 15%; text-align: right;}
+.table_fsx .table_col_3{width: 15%; text-align: right;}
+.table_fsx .table_col_4{width: 20%; text-align: right; height: 90rpx;}
+
+.table_tr .table_col_4 text{
+  color: #fff;
+  border-radius: 20rpx; 
+  padding:10rpx 20rpx;
+  border:solid  #00bea1 1rpx;
+  background: rgba(0, 190, 161, .8);
+  height: 62rpx; line-height: 42rpx;
+  margin-top: 13rpx;
+  float: right;
+  font-size: 26rpx;
+  
+}
+
+
+.hidden_list{display: none;}
+.view_more{margin-bottom: 50rpx; display: block; font-size: 32rpx;}
+.h2{display: block;}
+
+.column_chart{
+  /* padding: 0 30rpx; */
+  height: 400rpx;
+  width: 100%;
+  margin: 30rpx 0;
+  /* padding-left: 90rpx; */
+  position: relative;
+}
+.column_chart view{
+  /* border: solid #ddd 1rpx; */
+}
+
+.column_chart .chart_line{
+  height: 350rpx;
+  position: absolute;
+  width: 100%;
+  margin-right: 30rpx;
+}
+
+.column_chart .chart_line view{
+  height: 25%;
+  border-bottom: solid #ddd 1rpx;
+  position: relative;
+}
+.column_chart .chart_line view text{
+ font-size: 30rpx;
+ color: #999;
+ position: absolute;
+ display: block;
+ bottom: -25rpx;
+ background: #fff;
+ padding-right: 10rpx;
+ font-weight: lighter;
+}
+
+.column_chart .chart_content{
+  margin-left: 90rpx;
+  height: 400rpx;
+  position: relative;
+}
+
+.chart_column{
+  width: 33.3333%;
+  height: 350rpx;
+  float: left;
+  text-align: center;
+}
+
+
+
+.column_container{
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.column_container text{
+  padding-top: 348rpx;
+  display: block;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.column_container .column{
+  width: 45%;
+  height: 350rpx;
+  border-radius: 10rpx 10rpx 0 0 ;
+}
+
+.column_container .column:hover{
+ opacity: .8;
+}
+
+.column_container .column text{
+  position: absolute; 
+  top: -40rpx;
+  color: #00bea1;
+  padding: 0;
+  font-weight: lighter;
+}
+
+.column_container .column.c_yellow text{
+  color: #ffb600;
+}
+
+.column_container .column.c_green{
+  background: #00bea1;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.column_container .column.c_yellow{
+  right: 0;
+  background: #ffb600;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+
+/* 招生简章的样式============= */
+.text_zsjz{
+  padding: 30rpx;
+  padding-top: 0;
+  font-size: 31rpx;
+  color: #666;
+  line-height: 54rpx;
+}
+
+.text_zsjz rich-text .text_zsjz .wxParse-p{
+   margin: 20rpx 0;
+}
+
+.text_zsjz .zsjz_title{
+  font-weight: bold;
+  padding: 20rpx 30rpx 20rpx 0;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/down_arrow.svg) no-repeat right center;
+  background-size: 30rpx;
+  border-bottom: solid #ddd 1rpx; 
+}
+.text_zsjz .zsjz_title.active{
+  border-bottom: dashed #ddd 1rpx;
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/top_arrow.svg);
+}
+
+
+.text_zsjz .zsjz_content{
+  padding: 20rpx;
+  padding-right: 0;
+  /* border-bottom: dashed #ddd 1rpx; */
+  margin-bottom: 20rpx;
+}
+
+.text_zsjz .zsjz_content .close_content{
+  color: #00bea1;
+  padding-top: 20rpx;
+}

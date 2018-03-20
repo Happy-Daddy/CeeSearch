@@ -1,0 +1,139 @@
+<!--pages/test/test_detail.wxml-->
+<view class='directory_list_container' style="display:{{directoryView}}">
+  <scroll-view scroll-y="ture" class='directory_list_div'>
+    <view class='director_list first_director'>
+      个性特征描述
+    </view>
+    <view class='director_list'>
+      可能存在的盲点
+    </view>
+    <view class='director_list'>
+      功能运用
+    </view>
+    <view class='director_list'>
+      问题解决方式
+    </view>
+    <view class='director_list'>
+      工作中的优势
+    </view>
+    <view class='director_list'>
+      工作中的劣势
+    </view>
+    <view class='director_list'>
+      适合的岗位特质
+    </view>
+    <view class='director_list'>
+      职业类型——适合你的职业
+    </view>
+    <view class='director_list'>
+      对组织的贡献
+    </view>
+    <view class='director_list'>
+      领导风格
+    </view>
+    <view class='director_list'>
+      个性特征描述
+    </view>
+    <view class='director_list'>
+      更多菜单
+    </view>
+  </scroll-view>
+</view>
+
+<view class='test_detail_directory {{closeClass}}' bindtap='{{toggleBtn}}'>
+  <text>{{closeText}}</text>
+</view>
+
+<view class='test_detail_container'>
+  <rich-text class='h1'>
+    ESFJ
+  </rich-text>
+
+  <text class='explan'>外倾、感觉、情感和判断</text>
+  <text class='slogan'>
+——我能为您做些什么？
+</text>
+
+  <text class='h2'>
+个性特征描述
+</text>
+
+  <rich-text>
+    ESFJ型的人通过直接的行动和合作积极地以真实、实际的方法帮助别人。他们友好、富有同情心和责任感。因为ESFJ型的人把他们同别人的关系放在十分重要的位置，所以他们往往健谈、受人欢迎、有礼貌、渴望取悦他人。他们具有和睦的人际关系，并且通过很大的努力以获得和维持这种关系。事实上，他们常常理想化自己欣赏的人或物。ESFJ型的人往往对自己以及自己的成绩十分欣赏，因而他们对于批评或者别人的漠视很敏感。通常他们很果断，表达自己坚定的主张，乐于事情能很快得到解决。
+  </rich-text>
+
+  <rich-text>
+    ESFJ型的人很现实，他们讲求实际、实事求是和安排有序。他们参与并能记住重要的事情和细节，乐于别人也能对自己的事情很确信。他们在自己的个人经历或在他们所信赖之人的经验之上制定计划或得出见解。他们知道并参与周围的物质世界，并喜欢具有主动性和创造性。
+  </rich-text>
+
+  <rich-text>
+    ESFJ型的人十分小心谨慎，也非常传统化，因而他们能恪守自己的责任与承诺。他们支持现存制度，往往是委员会或组织机构中积极主动和乐于合作的成员，他们重视并能保持很好的社交关系。他们不辞劳苦地帮助他人，尤其在遇到困难或取得成功时，他们都很积极活跃。
+  </rich-text>
+
+  <text class='h2'>
+可能存在的盲点
+</text>
+
+  <rich-text>
+    ESFJ型的人高度重视和睦的关系，所以他们往往避免冲突，而不是毫不含糊地处理问题。有时他们过多地重视和在意所关心的见解和情感。在紧张或痛苦之时，他们对事实情况茫然无知。他们必须学会坦诚率直地处理冲突，确信在最困境的情形中，他们对于别人的情感具有天生的敏感，这种敏感会为他们提供必要的圆通。
+  </rich-text>
+
+  <rich-text>
+    ESFJ型的人往往会忽视自己的情感，因为他们渴望帮助别人，使别人高兴。他们很难拒绝别人或向别人请求帮助，这是因为不希望冒犯或使别人失望。通常他们很难提出或接受建设性的意见，因为他们很个人化地去处理事物。当他们找不到改变生活的办法，就会很悲观失望。暂时退后一步思考问题，判定一些目标，这样会使他们得到新的前景。在努力帮助别人的过程中，ESFJ型的人有时会以专横和盛气凌人的态度表达他们的观点。因而，在帮助别人之前，最好看一看别人是否希望得到建议或帮助。
+  </rich-text>
+
+  <text class='h2'>
+工作中的优势
+</text>
+
+  <rich-text>
+    对于不同的人格类型和不同的动力等极而言，没有“好”与“坏”之分，每一个人都是一个独一无二的个体，都有其特别的优势和劣势，但问题的关键在于如何认识这些优势和劣势,完善自己。我们对于成功的建议是：“取已之长，补已之短”。学会了这一点将会影响到你的成败及你对工作的喜好。你在工作中的优势：
+  </rich-text>
+
+  <rich-text class='list'>
+    有很大的精力和动力来完成任务、创造成果
+  </rich-text>
+
+  <rich-text class='list'>
+    能够有效地合别人写作，并且和他人建立起友好和睦的人际关系
+  </rich-text>
+
+  <rich-text class='list'>
+    处理事实和细节问题时，具有客观的态度和得天独厚的天资才能
+  </rich-text>
+  <rich-text class='list'>
+    善于培养和帮助他人；对于别人良好的行为举止能够给予赞扬，并使他们更加发扬光大
+  </rich-text>
+  <rich-text class='list'>
+    果敢坚决，稳定可靠
+  </rich-text>
+  <rich-text class='list'>
+    能够维护组织一向德价值观念和工作原则
+  </rich-text>
+  <rich-text class='list'>
+    灵活的组织技能和明确的工作道德
+  </rich-text>
+  <rich-text class='list'>
+    信奉工作在一个传统、稳定的组织里有其自身的优点和长处
+  </rich-text>
+  <rich-text class='list'>
+    乐意遵循已制定的理性公事和工作程序
+  </rich-text>
+  <rich-text class='list'>
+    通情达理，视角现实
+  </rich-text>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+<navigator url='/pages/test/test_result' class='white_line_btn green_btn white_grey_btn'>
+  <text>返回</text>
+</navigator>

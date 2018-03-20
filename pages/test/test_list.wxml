@@ -1,0 +1,101 @@
+<!--pages/test/test_list.wxml-->
+<view class='progress_bar clearfix'>
+<progress percent="20"  color='#00bea1' active='true' active-mode='forwards' />
+<text>10/40题</text>
+</view>
+
+
+
+<view class='test_list_title'>
+  <text class='test_title_num'>1</text>
+  <rich-text class='test_title_content'>
+    当你遇到新朋友时，你：
+  </rich-text>
+</view>
+
+
+
+<view class='test_list_options_container'>
+
+
+
+  <view class='test_list_option'>
+    <text class='test_list_option_num'>A</text>
+    <rich-text class='test_list_option_content'>说话时间与聆听的时间相当。</rich-text>
+  </view>
+
+  <view class='test_list_option'>
+    <text class='test_list_option_num'>B</text>
+    <rich-text class='test_list_option_content'>聆听的时间会比说话的时间多。</rich-text>
+  </view>
+</view>
+
+<view class='answer_container answer_option_container'>
+
+<!-- <progress percent="20" show-info color='#00bea1' active='true' active-mode='forwards' /> -->
+
+  <radio-group class="radio_wl clearfix" bindchange="radioChange">
+    <view class='radio_cotainer answer_option_container'>
+      <text class="answer_option">A</text>
+    </view>
+    <view class='radio_cotainer'>
+      <label class="ui-radio-list ui-radio-list-large {{radioCheckVal==0?'active':''}}">
+        <radio value='0' checked='checked'></radio>
+      </label>
+    </view>
+
+    <view class='radio_cotainer'>
+      <label class="ui-radio-list {{radioCheckVal==1?'active':''}}">
+        <radio value='1' checked='checked'></radio>
+      </label>
+    </view>
+
+    <view class='radio_cotainer'>
+      <label class="ui-radio-list ui-radio-list-small {{radioCheckVal==2?'active':''}}">
+        <radio value='2' checked='checked'></radio>
+      </label>
+    </view>
+
+    <view class='radio_cotainer'>
+      <label class="ui-radio-list ui-radio-list-small {{radioCheckVal==3?'active':''}}">
+        <radio value='3' checked='checked'></radio>
+      </label>
+    </view>
+
+    <view class='radio_cotainer'>
+      <label class="ui-radio-list {{radioCheckVal==4?'active':''}}">
+        <radio value='4' checked='checked'></radio>
+      </label>
+    </view>
+
+    <view class='radio_cotainer'>
+      <label class="ui-radio-list ui-radio-list-large {{radioCheckVal==5?'active':''}}">
+        <radio value='5' checked='checked'></radio>
+      </label>
+    </view>
+
+    <view class='radio_cotainer answer_option_container'>
+      <text class="answer_option answer_option_b">B</text>
+    </view>
+  </radio-group>
+
+  
+
+  <view class='answer_btn_container clearfix'>
+
+    <view class='answer_btn'>
+      <navigator url='/pages/test/test_introduce' class='white_line_btn green_btn white_grey_btn'>
+        <text>上一题</text>
+      </navigator>
+    </view>
+    <view class='answer_btn'>
+      <navigator url='/pages/test/test_result' class='white_line_btn green_btn'>
+        <text>下一题</text>
+      </navigator>
+    </view>
+
+
+  </view>
+
+
+</view>

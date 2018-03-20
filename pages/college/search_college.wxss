@@ -1,0 +1,32 @@
+/* pages/college/search_college.wxss */
+@import "../../weui.wxss";
+@import "../../style.wxss";
+@import "../more_result/more_result.wxss";
+
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+
+.university_view{
+  /* padding-top:20rpx;  */
+  padding-left: 140rpx;
+  height: 110rpx;
+  background-size: 110rpx;
+}
+
+.recommend_university{
+  padding-bottom: 10rpx;
+  margin-bottom: 0;
+}
+.university_info{color: #999;}
+.zhpm{padding-left: 40rpx; float: right;}
+.zhpm text{color:#fff; font-weight: bold; font-size: 26rpx; background: #00bea1; padding:3rpx 10rpx; border-radius: 30rpx;}
+
+navigator{overflow: hidden;}

@@ -1,0 +1,41 @@
+<!--pages/my/my_page.wxml-->
+
+
+<view class='user_info'>
+<image src='{{userInfo.avatarUrl}}'></image>
+<text>{{userInfo.nickName}}</text>
+
+<view class='student_wl clearfix'>
+<text>北京 · 文科</text>
+<navigator url='edit_info'>
+修改
+</navigator>
+
+</view>
+
+</view>
+
+
+<view class='list_menu_container'>
+<navigator class="list_menu right_arrow list_middle list_icon_coin yellow_text"  url='/pages/my/my_coin'>
+  <text>我的金币</text> <text class="right_text">298</text>
+</navigator>
+<navigator class="list_menu right_arrow list_middle list_icon_history"  url='history'>
+  <text>查询记录</text>
+</navigator>
+<navigator class="list_menu right_arrow list_middle list_icon_report"  url='#'>
+  <text>分数分析报告</text> <text class="right_text comingsoon_text">即将上线</text>
+</navigator>
+<navigator class="list_menu right_arrow list_middle list_icon_goal"  url='goalAndFavor'>
+  <text>目标大学</text>
+</navigator>
+<navigator class="list_menu right_arrow list_middle list_icon_favor"  url='goalAndFavor'>
+  <text>收藏的大学</text>
+</navigator>
+<!-- <navigator class="list_menu right_arrow  list_middle list_icon_user"  url='#'>
+  <text>个人信息</text>
+</navigator> -->
+<navigator class="list_menu right_arrow list_last list_icon_anounce"  url='text_page?param=mzsm'>
+  <text>免责声明</text>
+</navigator>
+</view>

@@ -1,0 +1,220 @@
+/* pages/index/index.wxss */
+page{background: #fafafa;}
+.index_page{background: #fafafa url(http://p1n6cj41i.bkt.clouddn.com/head_bg.png?a=1) no-repeat; background-size: 100%;
+text-align: center;
+}
+.search_box_ph{
+  font-size: 40rpx;
+  font-weight: normal;
+  color: #eee;
+}
+
+.top_title{
+  width: 640rpx;
+  height: 99rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.search_field{
+  padding: 20rpx 30rpx 0 30rpx;
+}
+
+.search_box{
+  border: solid #dedede 1rpx;
+  border-radius: 20rpx;
+  background: #fff url(http://p1n6cj41i.bkt.clouddn.com/school_bg.png);
+  background-size: 70%;
+  /* height: 400rpx; */
+  padding:30rpx;
+  text-align: left;
+  box-shadow: 0px 5px 15px 0px rgba(40, 40, 40, 0.09);
+}
+
+.h2_title{
+  font-weight: bold;
+  font-size: 42rpx;
+  display: block;
+  color: #333;
+}
+
+.explan{
+  font-size: 32rpx;
+  color: #666;
+  margin:40rpx 0 40rpx 0;
+  line-height: 80rpx;
+  padding-left: 42rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/info.svg) no-repeat left center;
+  background-size: 32rpx;
+  font-weight: light;
+}
+
+.input_score{
+  background: #fafafa url(http://p1n6cj41i.bkt.clouddn.com/score.png?a=1) no-repeat right center;
+  background-size: 68rpx;
+  border-radius: 20rpx;
+  border: solid #bbb 1rpx;
+  height: 90rpx;
+  padding-left: 20rpx;
+  font-weight: bold;
+  margin: 10rpx 0;
+  font-size: 56rpx;
+  color: #666;
+}
+
+.picker{
+  line-height: 60rpx;
+  font-size: 34rpx;
+  color: #666;
+  padding: 10rpx 0;
+}
+
+.sf{
+  float: right;
+  
+  padding-left: 38rpx;
+   background: url(http://p1n6cj41i.bkt.clouddn.com/local.svg) no-repeat left center; 
+  /* -webkit-mask: url(http://p1n6cj41i.bkt.clouddn.com/local.svg) no-repeat left center;
+    mask: url(http://p1n6cj41i.bkt.clouddn.com/local.svg) no-repeat left center;
+    -webkit-mask-size:32rpx;
+    mask-size:32rpx;
+     background-color: red; */
+     color: #00bea1;
+   background-size: 32rpx; 
+}
+ 
+
+
+.button-hover{
+  background-color:#00a48b;
+}
+
+.t_free{
+  text-align: center;
+  display: block;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.t_free text{
+  display: inline-block;
+}
+
+.t_free navigator{
+  display: inline-block;
+  padding-left: 20rpx;
+}
+
+.introduce{
+  text-align: left;
+  padding: 40rpx 30rpx;
+}
+
+.h3_title{
+  font-size: 36rpx;
+  color:#444;
+  font-weight: bold;
+}
+
+.intro_list{
+  padding: 40rpx 0;
+  border-bottom: solid #dedede 1rpx;
+}
+
+
+
+.intro_list .intro_content{
+ padding-left: 200rpx;
+ background: url(http://p1n6cj41i.bkt.clouddn.com/recommend.png) no-repeat left top;
+ background-size: 168rpx;
+ color: #666;
+ font-size: 32rpx;
+ font-weight: light;
+ line-height: 46rpx;
+}
+
+.intro_list .intro_title{
+  display: block;
+  font-weight: bold;
+  padding-bottom: 15rpx;
+  font-size: 34rpx;
+}
+
+.intro_list .intro_list_2{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/search_college.png) no-repeat left top;
+  background-size: 168rpx;
+}
+
+.intro_list .intro_list_3{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/mygoal.png) no-repeat left top;
+  background-size: 162rpx;
+}
+
+.intro_list .intro_list_4{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/report.png) no-repeat left top;
+  background-size: 152rpx;
+}
+
+
+.to_login{
+  text-align: center;
+  padding: 30rpx;
+  padding-top: 10rpx;
+}
+
+.to_login .to_login_t1{
+  color: #00bea1;
+  font-size: 36rpx;
+  display: block;
+}
+.to_login .to_login_t2{
+  color: #666;
+  font-size: 32rpx;
+  display: block;
+  padding: 10rpx 0;
+  padding-bottom: 30rpx;
+}
+
+.to_login button::after{border:none;}
+.to_login button{
+  border:solid #00bea1 1rpx;
+  background: #e1f4f1;
+  color: #00bea1;
+  font-size: 36rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+   border-radius: 15rpx; 
+}
+
+.home_list{
+  margin: 50rpx 0;
+  margin-bottom: 0;
+}
+
+.home_list navigator{
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.home_list navigator image{
+  height: 130rpx;
+  width: 130rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.home_list navigator text{
+  font-size: 32rpx;
+  color: #666;
+}
+
+/* .image_coming{width: 100%;} */
+
+.comingsoon{
+  width: 100%;
+  margin-bottom: 30rpx;
+  /* height: auto; */
+}

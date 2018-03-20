@@ -1,0 +1,6 @@
+/* pages/test/test_detail.wxss */
+@import "../../style.wxss";
+.white_grey_btn{
+  position: relative;
+  z-index: 1;
+}

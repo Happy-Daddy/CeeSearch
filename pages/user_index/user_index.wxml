@@ -1,0 +1,168 @@
+<!--pages/search_result/search_result.wxml-->
+<view class='result_page'>
+  <text class='sf_white'>天津</text>
+  <view class='result_score'>
+    <text>561</text>
+    <text class='fen'>分</text>
+    <text class='wenli'>理科</text>
+  </view>
+
+  <text class='search_time'>查询时间：2017年12月25日</text>
+
+  <view class='top_line'></view>
+
+  <view class='clearfix user_info'>
+    <text class='user_name'>刘孟军</text>
+    <view class='coin_num_container'>
+      <text class='coin_num'>金币 <text>298</text></text>
+    </view>
+  </view>
+</view>
+
+<text class='i_title first_title'>我的目标大学</text>
+
+<view class='goal'>
+  <view class='goal_name'>
+    <text>北京大学</text>
+  </view>
+  <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/pku.png);'>
+    <view class='university_info'>
+      综合类
+      <text class='university_tag'>985</text>
+      <text class='university_tag'>211</text>
+      <text class='university_tag'>双一流</text>
+    </view>
+    <view class='probability'>
+      录取概率
+      <text>风险大</text>
+      <text class='probability_num'>66<text>%</text></text>
+    </view>
+
+  </view>
+
+  <text class='last_year'>2017年分数线</text>
+  <view class='last_year_num clearfix'>
+    <view class='right_border'>
+      最高分
+      <text>720</text>
+    </view>
+    <view>
+      平均分
+      <text>702</text>
+    </view>
+  </view>
+
+  <view class='gap'>离目标大学录取低风险还需要提分
+    <text>56分</text> </view>
+
+</view>
+
+
+<text class='i_title'>推荐的大学</text>
+
+<view class='recommend_university u_list'>
+
+
+  <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/syu.png);'>
+    <text class='university_title'>中山大学</text>
+    <view class='university_info'>
+      广东 · 综合类
+      <text class='university_tag'>985</text>
+      <text class='university_tag'>211</text>
+      <text class='university_tag'>双一流</text>
+    </view>
+    <text class='recommend_prof'>推荐专业：核工程与核技术  阿拉伯语</text>
+  </view>
+
+  <view class='score_and_prob clearfix'>
+    <view class='right_border'>
+      <text class='highlight_text'>684</text>
+      <text>2017录取最高分</text>
+    </view>
+    <view class='right_border'>
+      <text class='highlight_text'>684</text>
+      <text>2017录取平均分</text>
+    </view>
+    <view>
+      <text class='highlight_text high_risk_text'>71%</text>
+      <text>录取概率 <text class='risk_index high_risk_background'>高风险</text> </text>
+    </view>
+  </view>
+
+</view>
+
+<view class='recommend_university u_list'>
+
+
+  <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/ua.png);'>
+    <text class='university_title'>厦门大学</text>
+    <view class='university_info'>
+      福建 · 综合类
+      <text class='university_tag'>985</text>
+      <text class='university_tag'>211</text>
+
+    </view>
+    <text class='recommend_prof'>推荐专业：汉语言文学  戏剧影视文学</text>
+  </view>
+
+  <view class='score_and_prob clearfix'>
+    <view class='right_border'>
+      <text class='highlight_text'>684</text>
+      <text>2017录取最高分</text>
+    </view>
+    <view class='right_border'>
+      <text class='highlight_text'>684</text>
+      <text>2017录取平均分</text>
+    </view>
+    <view>
+      <text class='highlight_text mid_risk_text'>83%</text>
+      <text>录取概率 <text class='risk_index mid_risk_background'>中风险</text> </text>
+    </view>
+  </view>
+
+</view>
+
+<view class='recommend_university u_list'>
+
+
+  <view class='university_view' style='background-image:url(http://p1n6cj41i.bkt.clouddn.com/bfsu.png?a=1);'>
+    <text class='university_title'>北京外国语大学</text>
+    <view class='university_info'>
+      北京 · 语言类
+      <text class='university_tag'>985</text>
+
+    </view>
+    <text class='recommend_prof'>推荐专业：匈牙利语  葡萄牙语  荷兰语</text>
+  </view>
+
+  <view class='score_and_prob clearfix'>
+    <view class='right_border'>
+      <text class='highlight_text'>684</text>
+      <text>2017录取最高分</text>
+    </view>
+    <view class='right_border'>
+      <text class='highlight_text'>684</text>
+      <text>2017录取平均分</text>
+    </view>
+    <view>
+      <text class='highlight_text low_risk_text'>92%</text>
+      <text>录取概率 <text class='risk_index low_risk_background'>低风险</text> </text>
+    </view>
+  </view>
+
+</view>
+
+<button class='btn_light_green'>查看更多推荐大学</button>
+
+<view class='history_and_share'>
+  <view class='clearfix'>
+    <navigator>历史查询记录</navigator>
+    <navigator class='btn_share'>分享赚取金币
+      <image src='http://p1n6cj41i.bkt.clouddn.com/coin.svg'></image>
+    </navigator>
+  </view>
+
+
+  <button class='btn_green' hover-class='button-hover' bindtap='goResult'>再次查询（120金币）</button>
+
+</view>

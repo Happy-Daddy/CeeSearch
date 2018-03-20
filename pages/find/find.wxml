@@ -1,0 +1,12 @@
+<!--pages/find/finde.wxml-->
+<view class='list_menu_container'>
+ 
+
+<navigator class="list_menu right_arrow list_middle list_icon_history no_icon"  url='/pages/test/test_home'>
+  <text>专业/性格测试</text>
+</navigator>
+<navigator class="list_menu right_arrow list_last list_icon_report no_icon"  url='/pages/index/news'>
+  <text>高考资讯</text> 
+</navigator>
+
+</view>

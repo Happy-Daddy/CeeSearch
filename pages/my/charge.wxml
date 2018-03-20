@@ -1,0 +1,59 @@
+<!--pages/my/charge.wxml-->
+
+<text class='i_title'>选择充值金币：</text>
+
+<view class='charge_list clearfix'>
+
+  <view class="box-1-3">
+    <view class='charge_btn'>
+      <rich-text class='charge_coin'>
+      × 30
+      </rich-text>
+
+      <rich-text class='charge_rmb'>
+      10元
+      </rich-text>
+    </view>
+  </view>
+
+  <view class="box-1-3">
+    <view class='charge_btn selected'>
+      <rich-text class='charge_coin'>
+      × 100
+      </rich-text>
+
+      <rich-text class='charge_rmb'>
+      5元 <rich-text>1.5折</rich-text>
+      </rich-text>
+    </view>
+  </view>
+
+  <view class="box-1-3">
+    <view class='charge_btn'>
+      <rich-text class='charge_coin'>
+      × 200
+      </rich-text>
+
+      <rich-text class='charge_rmb'>
+      10元 <rich-text>1.5折</rich-text> 
+      </rich-text>
+    </view>
+  </view>
+
+  <view class="box-1-3">
+    <view class='charge_btn'>
+      <rich-text class='charge_coin'>
+      × 500
+      </rich-text>
+
+      <rich-text class='charge_rmb'>
+      17元 <rich-text>1折</rich-text>
+      </rich-text>
+    </view>
+  </view>
+
+</view>
+
+<navigator url='#' class='white_line_btn green_btn'>
+<text>微信支付</text>
+</navigator>

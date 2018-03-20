@@ -1,0 +1,37 @@
+/* pages/college/college_filter.wxss */
+@import "../../style.wxss";
+@import "search_college.wxss";
+
+
+.i_title text{
+  color: #00bea1;
+}
+.page{background: #fff; padding-top: 110rpx;}
+.recommend_field navigator:last-of-type view{border:none;}
+.recommend_field{border-bottom: solid #ddd 1rpx;
+  border-top: solid #ddd 1rpx;
+  }
+.stopScroll{
+  height:100%; width:100%; overflow: hidden;
+}
+.white_line_btn{bottom: 20rpx;}
+
+.filter_type{border: none;}
+.bottom_field{position: fixed;
+height: 140rpx;
+bottom: 0;
+width: 100%;
+border-top: solid #ddd 1rpx;
+background: #fff;
+z-index: 999;
+}
+
+.filter_type view{
+  width: 25%;
+}
+.filter_type_3 view{
+  width: 33.3333%;
+}
+.i_title{
+  font-weight: normal;
+}

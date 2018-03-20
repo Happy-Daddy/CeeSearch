@@ -1,0 +1,30 @@
+<!--pages/index/news_detail.wxml-->
+<view class='article_page'>
+
+<view class='article_h1'>
+广东一菜地顷刻间“长高”3米 传出虎啸般声响
+</view>
+<view class='article_info'>
+<text>企鹅号《羊城晚报粤直击》</text>
+<text>2018-03-13 14:11:57</text>
+</view>
+
+<rich-text>
+3月10日，广东一块平坦的菜地顷刻间“长高了”3米左右，这究竟是什么奇观呢？连日来，许多村民都赶到现场围观这一“奇观”。村民说，事发菜园的主人她也认识，男主人当时在田里忙活，“他被吓得赶紧爬上来了”。
+</rich-text>
+
+<image lazy-load="ture"  mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/newsbanner1.png'></image>
+
+<rich-text>
+据男主人事后回忆，田园隆起的时候发出的声音就像是老虎在咆哮，隆起速度也很快，一下子就结束了。
+</rich-text>
+
+<image lazy-load="ture" mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/newsbanner2.png'></image>
+
+<rich-text>
+当地政府通报称：据初步调查，突起园地面积约2亩，解放前是个大水池，在开荒造田年代填复。园地突起原因是由于附近空地近期堆积大量石粉，对地面形成比较大的压力，挤压园地下方淤泥，从而造成园地表土突起，是正常的物理力学现象，基本排除地震的可能。
+</rich-text>
+
+</view>
+
+

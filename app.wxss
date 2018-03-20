@@ -1,0 +1,237 @@
+/**app.wxss**/
+@import "wxParse/wxParse.wxss";
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+view,text,rich-text {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.right_border {
+  border-right: solid #ddd 1px;
+}
+
+.btn_green {
+  margin-top: 30rpx;
+  color: #fff;
+  background: #00bea1;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* radio样式重置 */
+
+.ui-radio radio, .ui-radio checkbox {
+  display: none;
+  /* width:0; */
+}
+
+.ui-radio {
+  background: url(http://p1n6cj41i.bkt.clouddn.com/radio_bg.png) no-repeat left center;
+  background-size: 34rpx;
+  padding-left: 42rpx;
+  color: #666;
+  font-size: 34rpx;
+  margin-right: 20rpx;
+}
+
+.ui-radio.active {
+  background: url(http://p1n6cj41i.bkt.clouddn.com/radio_bg_c.png) no-repeat left center;
+  background-size: 34rpx;
+}
+
+
+/* radio样式2============ */
+
+.ui-radio-list radio, .ui-radio-list checkbox {
+  display: none;
+  /* width:0; */
+}
+
+.ui-radio-list{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #f4f4f4;
+  border: solid #c7c7c7 1rpx;
+  height: 52rpx;
+  width: 52rpx;
+  border-radius: 52rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.ui-radio-list.ui-radio-list-large{
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.ui-radio-list.ui-radio-list-small{
+  height: 46rpx;
+  width: 46rpx;
+
+}
+
+
+.ui-radio-list.active{
+  background: #fff;
+  border: solid #00bea1 15rpx;
+}
+
+navigator{color: #00bea1;}
+/* -------- */
+
+
+/*=================================== 
+菜单列表==============================
+===================================== */
+.list_menu{
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 34rpx;
+  background: #fff url(http://p1n6cj41i.bkt.clouddn.com/test.svg) no-repeat 36rpx center;
+  background-repeat: no-repeat;
+  background-position: 36rpx center;
+  background-size: 50rpx;
+  color: #666;
+  border:solid #e5e5e5 1rpx;
+  border-left: none;
+  border-right: none;
+  padding-left: 110rpx;
+  margin-top: 40rpx;
+}
+
+/* 带右侧箭头的菜单 */
+.list_menu.right_arrow text:after{
+  content: url(http://p1n6cj41i.bkt.clouddn.com/right_arrow.svg);
+  display: block;
+  height: 30rpx;
+  width: 30rpx;
+  float: right; 
+  margin-right: 30rpx;
+  margin-top: 5rpx;
+}
+
+/* 菜单右侧文字 */
+.list_menu.right_arrow text.right_text:after{content: none;}
+.list_menu.right_arrow text.right_text{float:right; padding-right: 20rpx; font-size: 36rpx;}
+
+
+
+/* 菜单集合的container */
+.list_menu_container{
+  border: solid #e5e5e5 1rpx;
+  border-left: none;
+  border-right: none;
+  background: #fff;
+}
+
+/* 没有左侧小图标的菜单 */
+/* .list_menu_container navigator.list_menu{
+  padding-left: 0;
+  background: none;
+} */
+/* .list_menu_container navigator.list_menu.list_last,.list_menu_container navigator.list_menu:last-of-type{
+  padding-left: 30rpx;
+  background: none;
+} */
+
+/* 菜单集合的首个菜单 */
+.list_menu.list_first{
+  border-bottom: none;
+}
+
+/* 菜单集合的中间菜单 */
+.list_menu.list_middle{
+  /* border-top: inherit; */
+  border-top: none;
+  border-bottom: solid #e5e5e5 1rpx;
+  margin-top: 0;
+  padding-left: 80rpx;
+  margin-left: 30rpx;
+  background-position: 6rpx center;
+}
+
+/* 菜单集合的最后一个菜单 */
+.list_menu.list_last,.list_menu:last-of-type{
+  /* border-top: inherit; */
+  border: none;  
+  margin-top: 0;
+}
+
+/* 无icon的菜单 */
+.list_menu.no_icon{
+  padding-left: 0rpx;
+  background: none;
+}
+.list_menu.list_last.no_icon{
+  margin-left: 30rpx;
+}
+
+/* 没有上间距的菜单 */
+.list_menu.margin_top_0{
+  margin-top: 0;
+}
+
+/* 黄色文字的菜单 */
+.list_menu.yellow_text{
+  color: #ffb400;
+}
+
+/* 即将上线的菜单 */
+.comingsoon_text{
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+/* 右侧辅助文字 */
+.explain_text{
+  color: #ccc;
+  font-size: 22rpx;
+}
+
+/* 菜单图标列表 */
+.list_icon_coin{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/coin.svg);
+}
+.list_icon_history{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/icon_history.svg);
+}
+.list_icon_report{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/icon_report.svg);
+}
+.list_icon_goal{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/icon_goal.svg);
+}
+.list_icon_favor{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/icon_favor.svg);
+}
+.list_icon_user{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/icon_user.svg);
+}
+
+.list_icon_anounce{
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/info_grey.svg);
+  background-size: 44rpx;
+  background-position-y:37rpx ;
+}

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/find/discipline",
+    "pages/index/index",
+    "pages/index/news_detail",
+    "pages/index/news",
+    "pages/test/test_result",
+    "pages/find/find",
+    "pages/test/test_list",
+    "pages/more_result/more_result",
+    "pages/my/edit_info",
+    "pages/my/my_page",
+    "pages/index/search_range",
+    "pages/my/history",
+    "pages/college/college_detail",
+    "pages/search_result/search_result",
+    "pages/college/college_home",
+    "pages/college/college_filter",
+    "pages/college/search_college",
+    "pages/my/charge",
+    "pages/my/my_coin",
+    "pages/test/test_detail",
+    "pages/test/test_introduce",
+    "pages/test/test_home",
+    "pages/logs/logs",
+    "pages/my/text_page",
+    "pages/my/goalAndFavor"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00bea1",
+    "navigationBarTitleText": "金榜高考志愿大数据",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#00bea1",
+    "backgroundColor": "#f6f6f6",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "resource/bar_home.png",
+        "selectedIconPath": "resource/bar_home_s.png"
+      },
+      {
+        "pagePath": "pages/college/college_home",
+        "text": "高校查询",
+        "iconPath": "resource/bar_search.png",
+        "selectedIconPath": "resource/bar_search_s.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "resource/bar_find.png",
+        "selectedIconPath": "resource/bar_find_s.png"
+      },
+      {
+        "pagePath": "pages/my/my_page",
+        "text": "我的",
+        "iconPath": "resource/bar_me.png",
+        "selectedIconPath": "resource/bar_me_s.png"
+      }
+    ]
+  }
+}

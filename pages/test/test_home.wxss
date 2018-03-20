@@ -1,0 +1,18 @@
+/* pages/test/test_home.wxss */
+@import "../../style.wxss";
+
+page {
+  background: -webkit-linear-gradient(top, #00bea1, #efca01);
+}
+
+.main_content {
+  display: block;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(http://p1n6cj41i.bkt.clouddn.com/top_green2.png?a=1),
+                      url(http://p1n6cj41i.bkt.clouddn.com/xxx_bg.png?a=1);
+  background-repeat: repeat-x, repeat;
+  background-position: left top, left top;
+  background-size: 10rpx,12rpx;
+}

@@ -1,0 +1,5 @@
+/* pages/my/text_page.wxss */
+@import "../../style.wxss";
+.test_detail_container{
+  padding-top: 0;
+}

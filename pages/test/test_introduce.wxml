@@ -1,0 +1,24 @@
+<!--pages/test/test_introduce.wxml-->
+<view class='test_introduce_container'>
+<text class='h1_40'>测试须知：</text>
+
+<view class='test_introduce_list margin_top60'>
+请在心态平和及时间充足的情况下才开始答题。
+</view>
+
+<view class='test_introduce_list'>
+每道题目均有两个答案：A和B。请仔细阅读题目，按照与你性格相符的程度选择倾向于A还是B，选项有六个圆点，越靠近A或者B的圆点，表示越倾向于该选项。</view>
+
+<view class='test_introduce_list'>
+请注意，题目的答案无对错之分，你不需要考虑哪个答案“应该”更好，而且不要在任何问题上思考太久，而是应该凭你心里的第一反应做出选择。
+</view>
+
+<view class='test_introduce_list'>
+如果你觉得在不同的情境里，两个答案或许都能反映你的倾向，请选择一个对于你的行为方式来说最自然、最顺畅和最从容的答案。
+</view>
+
+</view>
+
+<navigator url='/pages/test/test_list' class='white_line_btn green_btn'>
+<text>我已了解，开始答题</text>
+</navigator>
