@@ -6,6 +6,10 @@
   padding-left: 0;
     margin-top: 0;
     font-size: 40rpx;
+    height: auto;
+}
+.recommend_university{
+  padding-bottom: 20rpx;
 }
 .d_info{padding-top: 10rpx;}
 

@@ -1,8 +1,8 @@
 {
   "pages": [
-    
-    "pages/index/index",
     "pages/find/discipline_detail",
+    "pages/index/index",
+    
     "pages/find/discipline",
     
     "pages/index/news_detail",
