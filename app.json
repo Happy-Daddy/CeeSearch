@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/find/discipline_detail",
     "pages/index/index",
-    
+    "pages/my/getReport",
+    "pages/find/discipline_detail",
+   
     "pages/find/discipline",
-    
     "pages/index/news_detail",
     "pages/index/news",
     "pages/test/test_result",
@@ -23,7 +23,6 @@
     "pages/college/search_college",
     "pages/my/charge",
     "pages/my/my_coin",
-    
     "pages/test/test_introduce",
     "pages/test/test_home",
     "pages/logs/logs",

@@ -1,0 +1,34 @@
+<!--pages/my/getReport.wxml-->
+<view class='page'>
+<image class='top_banner'  mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/getreport_img.jpg'></image>
+<image class='getreport_title'  mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/getreport_title.png'></image>
+
+<text class='getreport_title_text'>轻松2步将其召回</text>
+
+
+<view class='get_back_bar clearfix'>
+ <image src='http://p1n6cj41i.bkt.clouddn.com/inputscore.png' mode='widthFix' ></image>
+ <rich-text>
+ 输入分数，获取专属推荐大学
+ </rich-text>
+ <view class='right_btn'>
+ <navigator url='../index/index' open-type='switchTab' >去完成</navigator>
+ </view>
+</view>
+
+<view class='get_back_bar green_bar clearfix'>
+ <image src='http://p1n6cj41i.bkt.clouddn.com/setgoal.png' mode='widthFix' ></image>
+<rich-text>
+设定目标大学或收藏大学 
+让努力更有方向！
+</rich-text>
+
+<view class='right_btn right_done'>
+
+</view>
+
+</view>
+
+  <button class='btn_green' disabled="{{btn_disabled}}" hover-class='button-hover' >查看我的分数分析报告（29金币）</button>
+
+</view>

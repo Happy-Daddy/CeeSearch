@@ -2,19 +2,19 @@
 <text class='i_title'>查询历史</text>
 
 <view class='list_menu_container no_icon'>
-<navigator class="list_menu right_arrow list_middle  "  url='/pages/search_result/search_result'>
+<navigator class="list_menu right_arrow list_middle no_icon  "  url='/pages/search_result/search_result'>
   <text>687分</text> <text class="right_text explain_text">查询于2018/01/12</text>
 </navigator>
 
-<navigator class="list_menu right_arrow list_middle  "  url='/pages/search_result/search_result'>
+<navigator class="list_menu right_arrow list_middle no_icon "  url='/pages/search_result/search_result'>
   <text>656分</text> <text class="right_text explain_text">查询于2018/01/12</text>
 </navigator>
 
-<navigator class="list_menu right_arrow list_middle  "  url='/pages/search_result/search_result'>
+<navigator class="list_menu right_arrow list_middle no_icon "  url='/pages/search_result/search_result'>
   <text>677分</text> <text class="right_text explain_text">查询于2018/01/12</text>
 </navigator>
 
-<navigator class="list_menu right_arrow list_last"  url='/pages/search_result/search_result'>
+<navigator class="list_menu right_arrow no_icon list_last"  url='/pages/search_result/search_result'>
   <text>632分</text><text class="right_text explain_text">查询于2018/01/12</text>
 </navigator>
 </view>

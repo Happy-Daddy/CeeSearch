@@ -23,8 +23,8 @@
 <navigator class="list_menu right_arrow list_middle list_icon_history"  url='history'>
   <text>查询记录</text>
 </navigator>
-<navigator class="list_menu right_arrow list_middle list_icon_report"  url='#'>
-  <text>分数分析报告</text> <text class="right_text comingsoon_text">即将上线</text>
+<navigator class="list_menu right_arrow list_middle list_icon_report"  url='getReport'>
+  <text>分数分析报告</text> 
 </navigator>
 <navigator class="list_menu right_arrow list_middle list_icon_goal"  url='goalAndFavor'>
   <text>目标大学</text>
