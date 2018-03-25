@@ -1,0 +1,138 @@
+/* pages/my/report.wxss */
+@import "../../style.wxss";
+@import "../index/search_range.wxss";
+@import "../find/discipline_detail.wxss";
+
+
+.report_title{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/result_bg2.png) no-repeat;
+  background-size: cover;
+  height: 200rpx;
+  text-align: center;
+}
+
+.rt_2{
+  height: auto;
+  padding: 20rpx 0;
+}
+
+.i_title{
+  line-height: 38rpx;
+}
+
+.report_title text{
+  color: #fff;
+  display: block;
+}
+
+.report_title text.t1{
+  font-size: 49rpx;
+  font-weight: bold;
+}
+
+.report_title text.t_explain{
+  font-size: 28rpx; padding: 15rpx 30rpx;
+  padding-top: 20rpx;
+}
+
+.padding_b_20{
+  padding-bottom: 20rpx;
+}
+
+.padding_30{
+  padding: 0 30rpx;
+}
+.lq_list{
+  margin: 20rpx 30rpx;
+}
+
+.college_bar{
+  float: left;
+}
+
+.college_name{
+  float: right;
+  font-size: 34rpx;
+  color: #666;
+}
+
+.bar_img{
+  float: left;
+  width: 46rpx;
+  height: 46rpx;
+  background: url(http://p1n6cj41i.bkt.clouddn.com/students.svg) no-repeat;
+  background-size: 46rpx;
+  background-position-y: 5rpx;
+}
+
+.percent80 .bar_5{
+ background-position-y: -44rpx
+}
+
+.percent60 .bar_5,.percent60 .bar_4{
+ background-position-y: -44rpx
+}
+
+.percent40 .bar_5,.percent40 .bar_4,.percent40 .bar_3{
+ background-position-y: -44rpx
+}
+
+.percent20 .bar_5,.percent20 .bar_4,.percent20 .bar_3,.percent20 .bar_2{
+ background-position-y: -44rpx
+}
+
+.percent0 .bar_img{
+   background-position-y: -44rpx
+}
+
+ .city_list{
+   margin: 20rpx 0;
+   background: #fafafa;
+   border-radius: 15rpx;
+   padding-right: 15rpx;
+ }
+
+ .lq_city{padding: 30rpx; padding-top: 10rpx;}
+ .city_name{float: left;
+ background: #0ca17e;
+ color: #fff;
+ border-radius: 15rpx;
+ display: block;
+ padding: 7rpx 18rpx;
+ }
+ .city_data{float: right; color: #0ca17e;}
+ .city_data text{
+   padding-left: 15rpx;
+   font-size: 36rpx;
+ }
+
+ .cl_2 .city_name{background: #3ba763;}
+ .cl_2 .city_data{color: #3ba763;}
+
+ .cl_3 .city_name{background: #8ab137;}
+ .cl_3 .city_data{color: #8ab137;}
+
+.cl_4 .city_name{background: #d2ba0e;}
+
+
+ .cl_4 .city_data{color: #d2ba0e;}
+
+.cl_5 .city_name{background: #ecbd00;}
+ .cl_5 .city_data{color: #ecbd00;}
+
+ .pecent_bar view{
+   background: #f79b09;
+ }
+
+ .qs_3{
+   margin: 20rpx 0;
+ }
+
+
+
+/* #mychart-dom-bar{width: 50%;}
+#mychart-dom-bar canvas{
+  width: 80%;
+  margin: 0 auto;
+  overflow: visible;
+} */

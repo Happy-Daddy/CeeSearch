@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    btn_disabled:0
+<<<<<<< HEAD
+  
+=======
+    btn_disabled:1
+>>>>>>> origin/xujing
   },
 
   /**
@@ -14,11 +18,7 @@ Page({
   onLoad: function (options) {
   
   },
-  goResult:function(){
-    wx.navigateTo({
-      url: 'report',
-    });
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

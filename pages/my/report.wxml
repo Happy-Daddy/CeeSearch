@@ -1,0 +1,220 @@
+<!--pages/my/report.wxml-->
+<view class='report_title'>
+  <text class='t1'>北京理科 349分</text>
+  <text class='t_explain'>本报告根据分数推荐大学、预测省内排名的查询记录的成绩平均值生成</text>
+</view>
+
+<view class='range_result'>
+
+  <!-- 
+ ===============
+ 根据百分比显示下面的文字，五个等级分别为：
+ 0~30%; 31~50%; 51~70%; 71~85%; 86%~100%
+ ===============
+  -->
+
+  <text class='range_title'>快快冲刺吧！</text>
+  <!-- 
+<text class='range_title'>稳中求进哦！</text>
+<text class='range_title'>厉害了呢！</text>
+<text class='range_title'>学霸你好</text>
+<text class='range_title range_title_smalltext'>学神，请接受我的膜拜</text> 
+-->
+
+  <view class='range_main'>
+
+    <rich-text>
+      78</rich-text>
+    <text>%</text>
+  </view>
+
+  <view class='range_explain'>
+    <rich-text>
+      你超越了
+      <text>78%</text> 的同学
+    </rich-text>
+  </view>
+
+  <view class='range_chart'>
+
+    <text>北京市2017年文科高考分数人数分布图</text>
+
+    <view class="qs_container">
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    </view>
+
+  </view>
+
+
+</view>
+
+<text class='i_title'>
+目标大学录取概率
+</text>
+<view class="qs_container">
+  <ec-canvas id="mychart-dom-bar2" canvas-id="mychart-bar2" ec="{{ ec2 }}"></ec-canvas>
+</view>
+
+<text class='i_title'>
+目标大学近四年录取最低分
+</text>
+
+<view class="qs_container qs_3">
+  <ec-canvas id="mychart-dom-bar3" canvas-id="mychart-bar3" ec="{{ ec3 }}"></ec-canvas>
+</view>
+
+<view class='report_title rt_2'>
+  <text class='t1'>同分考生去向</text>
+  <text class='t_explain'>2014年~2017年考生大数据与你分数相近的考生数为3242名</text>
+</view>
+
+<text class='i_title padding_b_20'>
+录取院校TOP5
+</text>
+<view class='lq_list clearfix'>
+  <!-- 改变下面一行的percent class 来控制博士帽的显示 从取值为percent100/80/60/40/20/0 -->
+  <view class='college_bar clearfix percent100'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+  </view>
+  <view class='college_name'>
+    北京航空航天大学
+  </view>
+</view>
+
+<view class='lq_list clearfix'>
+  <view class='college_bar clearfix percent80'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+  </view>
+  <view class='college_name'>
+    河北工业大学
+  </view>
+</view>
+
+<view class='lq_list clearfix percent60'>
+  <view class='college_bar clearfix'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+  </view>
+  <view class='college_name'>
+    北京工商大学
+  </view>
+</view>
+
+<view class='lq_list clearfix'>
+  <view class='college_bar clearfix percent40'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+  </view>
+  <view class='college_name'>
+    北京工业大学
+  </view>
+</view>
+
+<view class='lq_list clearfix'>
+  <view class='college_bar clearfix percent20'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+  </view>
+  <view class='college_name'>
+    中国地质大学
+  </view>
+</view>
+
+
+
+<text class='i_title'>
+录取专业TOP5
+</text>
+<view class='padding_30'>
+  <view class='fb_item clearfix'>
+    <text>工商管理类</text>
+    <view class='pecent_bar'>
+      <view style='width:11.6%;'></view>
+    </view>
+    <view class='pecent_num'>
+      1549人
+    </view>
+  </view>
+  <view class='fb_item clearfix'>
+    <text>机械设计</text>
+    <view class='pecent_bar'>
+      <view style='width:22%;'></view>
+    </view>
+    <view class='pecent_num'>
+      752人
+    </view>
+  </view>
+  <view class='fb_item clearfix'>
+    <text>软件工程</text>
+    <view class='pecent_bar'>
+      <view style='width:19%;'></view>
+    </view>
+    <view class='pecent_num'>
+      710人
+    </view>
+  </view>
+</view>
+
+<text class='i_title'>
+录取城市TOP5
+</text>
+<view class='lq_city'>
+
+  <view class='city_list  clearfix'>
+    <view class='city_name'>天津</view>
+    <view class='city_data'>
+      <text>264人</text>
+      <text>26%</text>
+    </view>
+  </view>
+
+  <view class='city_list cl_2 clearfix'>
+    <view class='city_name'>北京</view>
+    <view class='city_data'>
+      <text>218人</text>
+      <text>20%</text>
+    </view>
+  </view>
+
+  <view class='city_list cl_3 clearfix'>
+    <view class='city_name'>厦门</view>
+    <view class='city_data'>
+      <text>190人</text>
+      <text>18%</text>
+    </view>
+  </view>
+
+  <view class='city_list cl_4 clearfix'>
+    <view class='city_name'>广州</view>
+    <view class='city_data'>
+      <text>168人</text>
+      <text>15%</text>
+    </view>
+  </view>
+
+  <view class='city_list cl_5 clearfix'>
+    <view class='city_name'>深圳</view>
+    <view class='city_data'>
+      <text>147人</text>
+      <text>9%</text>
+    </view>
+  </view>
+
+</view>

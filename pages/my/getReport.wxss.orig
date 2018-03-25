@@ -1,0 +1,85 @@
+<<<<<<< HEAD
+/* pages/my/getReport.wxss */
+=======
+/* pages/my/getReport.wxss */
+@import "../../style.wxss";
+
+.page{
+  padding: 30rpx;
+  text-align: center;
+}
+
+.top_banner{
+  width: 100%;
+}
+
+.getreport_title{width: 80%; margin: 0 auto; margin-top: 40rpx;display: block;}
+.getreport_title_text{
+  margin: 20rpx 0;
+  font-size: 42rpx;
+  color: #00bea1;
+  display: block;
+  padding-bottom: 20rpx;
+}
+
+.get_back_bar{
+  height: 150rpx;
+  background: #00bea1;
+  border-radius: 20rpx;
+  margin: 20rpx 0;
+  display: block;
+}
+
+.get_back_bar rich-text{
+  text-align: left;
+  color: #fff;
+  font-size: 32rpx; 
+  width: calc(100% - 273rpx);
+  float: left;
+  display: block;
+  padding:0 20rpx;
+  /* padding-top: 50rpx; */
+  padding-top: 35rpx;
+}
+.get_back_bar image{
+  width: 98rpx;
+  padding-top: 25rpx;
+  float: left;
+  padding-left: 25rpx;
+}
+
+.green_bar{
+  background: #7dbe00;
+}
+
+.green_bar rich-text{
+  padding-top: 35rpx;
+}
+
+.right_btn{width: 150rpx;
+height: 150rpx;
+float: right;
+overflow: hidden;
+}
+
+.right_btn navigator{
+  /* width: 100%; */
+  background: #fff;
+  border-radius: 10rpx;
+  color: #00bea1;
+  font-size: 28rpx;
+  text-align: center;
+  margin-right: 20rpx;
+  padding: 5rpx 0rpx;
+  margin-top: 50rpx;
+  display: block;
+  width: 110rpx;
+}
+
+.right_btn.right_done{
+  background: url(http://p1n6cj41i.bkt.clouddn.com/ywc.png) no-repeat left center;
+  background-size: 120rpx;
+}
+
+.btn_green{font-size: 40rpx;}
+>>>>>>> origin/xujing

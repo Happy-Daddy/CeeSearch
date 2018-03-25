@@ -11,6 +11,9 @@ function initChart(canvas, width, height) {
   canvas.setChart(chart);
 
   var option = {
+    grid:{
+      containLabel: true
+    },
     xAxis: {
       name: '(年)',
       nameGap: 4,

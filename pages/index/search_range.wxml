@@ -3,25 +3,25 @@
 
 
 
- 
-   
-  <view class="search_field">
-    <view class="search_box">
-      <!-- <text class="h2_title">请输入分数</text> -->
-      <!-- <text class='explan'>你最近一次月考/模拟考的成绩</text> -->
-      <input placeholder='请输入分数' placeholder-class='search_box_ph' class="input_score" placeholder-style='color:#ccc;' type='number' maxlength='3'></input>
 
 
-<!-- 不可以选择的情况====================== -->
-<view>
-<text class='student_i'>北京 · 文科 <text>(请在个人中心处修改省份和文理科)</text> </text>
-</view>
+<view class="search_field">
+  <view class="search_box">
+    <!-- <text class="h2_title">请输入分数</text> -->
+    <!-- <text class='explan'>你最近一次月考/模拟考的成绩</text> -->
+    <input placeholder='请输入分数' placeholder-class='search_box_ph' class="input_score" placeholder-style='color:#ccc;' type='number' maxlength='3'></input>
 
-<!-- 不可以选择的情况-end====================== -->
+
+    <!-- 不可以选择的情况====================== -->
+    <view>
+      <text class='student_i'>北京 · 文科 <text>(请在个人中心处修改省份和文理科)</text> </text>
+    </view>
+
+    <!-- 不可以选择的情况-end====================== -->
 
 
-<!-- 可以选择的情况========================= -->
-<view hidden='true'>
+    <!-- 可以选择的情况========================= -->
+    <view hidden='true'>
 
 
       <view class="section">
@@ -44,68 +44,66 @@
 
       </radio-group>
 
+    </view>
+
+    <!-- 可以选择的情况-end========================= -->
+
+    <button class='btn_green' hover-class='button-hover' bindtap='viewResult'>测排名(29金币)</button>
+    <view class='t_free'>
+      <text>金币余额: 58  </text>
+      <navigator url='/pages/my/text_page?param=getcoin'>如何获得金币？</navigator>
+    </view>
+
+
+  </view>
 </view>
 
-<!-- 可以选择的情况-end========================= -->
-
-      <button class='btn_green' hover-class='button-hover' bindtap='viewResult'>测排名(29金币)</button>
-      <view class='t_free'>
-        <text>金币余额: 58  </text>
-        <navigator url='/pages/my/text_page?param=getcoin'>如何获得金币？</navigator>
-      </view>
 
 
-    </view>
-  </view>
+<view class='range_result' hidden='{{showResult != 1}}'>
 
- 
-
- <view class='range_result' hidden='{{showResult != 1}}'>
-
- <!-- 
+  <!-- 
  ===============
  根据百分比显示下面的文字，五个等级分别为：
  0~30%; 31~50%; 51~70%; 71~85%; 86%~100%
  ===============
   -->
 
-<text class='range_title'>快快冲刺吧！</text>
-<!-- 
+  <text class='range_title'>快快冲刺吧！</text>
+  <!-- 
 <text class='range_title'>稳中求进哦！</text>
 <text class='range_title'>厉害了呢！</text>
 <text class='range_title'>学霸你好</text>
 <text class='range_title range_title_smalltext'>学神，请接受我的膜拜</text> 
 -->
 
-<view class='range_main'>
- 
-<rich-text>
-  78</rich-text>
-  <text>%</text>
-</view>
+  <view class='range_main'>
 
- <view class='range_explain'>
- <rich-text>
- 你超越了 <text>78%</text> 的同学
- </rich-text>
- </view>
+    <rich-text>
+      78</rich-text>
+    <text>%</text>
+  </view>
 
-<view class='range_chart'>
+  <view class='range_explain'>
+    <rich-text>
+      你超越了
+      <text>78%</text> 的同学
+    </rich-text>
+  </view>
 
-<text>北京市2017年文科高考分数人数分布图</text>
+  <view class='range_chart'>
 
-<view class="qs_container">
-        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
-      </view>
+    <text>北京市2017年文科高考分数人数分布图</text>
 
-</view>
+    <view class="qs_container">
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    </view>
 
- <view class="buttom_tip">
-<text>
+  </view>
+
+  <view class="buttom_tip">
+    <text>
 测排名根据往年数据计算所得，仅供参考
 </text>
+  </view>
 </view>
- </view>
-
-
-

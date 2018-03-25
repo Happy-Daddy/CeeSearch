@@ -1,4 +1,7 @@
 <!--pages/my/getReport.wxml-->
+<<<<<<< HEAD
+<text>pages/my/getReport.wxml</text>
+=======
 <view class='page'>
 <image class='top_banner'  mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/getreport_img.jpg'></image>
 <image class='getreport_title'  mode='widthFix' src='http://p1n6cj41i.bkt.clouddn.com/getreport_title.png'></image>
@@ -29,6 +32,7 @@
 
 </view>
 
-  <button class='btn_green' disabled="{{btn_disabled}}" hover-class='button-hover' bindtap='goResult' >查看我的分数分析报告（29金币）</button>
+  <button class='btn_green' disabled="{{btn_disabled}}" hover-class='button-hover' >查看我的分数分析报告（29金币）</button>
 
 </view>
+>>>>>>> origin/xujing
