@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/my/report",
+    
     "pages/index/index",
-    "pages/my/report",    
+       
     "pages/my/getReport",
     "pages/find/discipline_detail",
     "pages/find/discipline",

@@ -72,13 +72,16 @@
 录取院校TOP5
 </text>
 <view class='lq_list clearfix'>
-  <!-- 改变下面一行的percent class 来控制博士帽的显示 从取值为percent100/80/60/40/20/0 -->
-  <view class='college_bar clearfix percent100'>
+  <!-- 改变下面一行的percent class 来控制博士帽的显示 从取值为percent8/7/6/5/4/3/2/1/0 -->
+  <view class='college_bar clearfix percent8'>
     <view class='bar_img bar_1'></view>
     <view class='bar_img bar_2'></view>
     <view class='bar_img bar_3'></view>
     <view class='bar_img bar_4'></view>
     <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
   </view>
   <view class='college_name'>
     北京航空航天大学
@@ -86,25 +89,31 @@
 </view>
 
 <view class='lq_list clearfix'>
-  <view class='college_bar clearfix percent80'>
+  <view class='college_bar clearfix percent7'>
     <view class='bar_img bar_1'></view>
     <view class='bar_img bar_2'></view>
     <view class='bar_img bar_3'></view>
     <view class='bar_img bar_4'></view>
     <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
   </view>
   <view class='college_name'>
     河北工业大学
   </view>
 </view>
 
-<view class='lq_list clearfix percent60'>
+<view class='lq_list clearfix percent6'>
   <view class='college_bar clearfix'>
     <view class='bar_img bar_1'></view>
     <view class='bar_img bar_2'></view>
     <view class='bar_img bar_3'></view>
     <view class='bar_img bar_4'></view>
     <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
   </view>
   <view class='college_name'>
     北京工商大学
@@ -112,12 +121,15 @@
 </view>
 
 <view class='lq_list clearfix'>
-  <view class='college_bar clearfix percent40'>
+  <view class='college_bar clearfix percent5'>
     <view class='bar_img bar_1'></view>
     <view class='bar_img bar_2'></view>
     <view class='bar_img bar_3'></view>
     <view class='bar_img bar_4'></view>
     <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
   </view>
   <view class='college_name'>
     北京工业大学
@@ -125,12 +137,63 @@
 </view>
 
 <view class='lq_list clearfix'>
-  <view class='college_bar clearfix percent20'>
+  <view class='college_bar clearfix percent4'>
     <view class='bar_img bar_1'></view>
     <view class='bar_img bar_2'></view>
     <view class='bar_img bar_3'></view>
     <view class='bar_img bar_4'></view>
     <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
+  </view>
+  <view class='college_name'>
+    中国地质大学
+  </view>
+</view>
+
+<view class='lq_list clearfix'>
+  <view class='college_bar clearfix percent3'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
+  </view>
+  <view class='college_name'>
+    中国地质大学
+  </view>
+</view>
+
+<view class='lq_list clearfix'>
+  <view class='college_bar clearfix percent2'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
+  </view>
+  <view class='college_name'>
+    中国地质大学
+  </view>
+</view>
+
+<view class='lq_list clearfix'>
+  <view class='college_bar clearfix percent1'>
+    <view class='bar_img bar_1'></view>
+    <view class='bar_img bar_2'></view>
+    <view class='bar_img bar_3'></view>
+    <view class='bar_img bar_4'></view>
+    <view class='bar_img bar_5'></view>
+    <view class='bar_img bar_6'></view>
+    <view class='bar_img bar_7'></view>
+    <view class='bar_img bar_8'></view>
   </view>
   <view class='college_name'>
     中国地质大学

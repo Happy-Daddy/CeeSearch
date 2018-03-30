@@ -65,20 +65,32 @@
   background-position-y: 5rpx;
 }
 
-.percent80 .bar_5{
+.percent7 .bar_8{
  background-position-y: -44rpx
 }
 
-.percent60 .bar_5,.percent60 .bar_4{
+.percent6 .bar_7,.percent6 .bar_8{
  background-position-y: -44rpx
 }
 
-.percent40 .bar_5,.percent40 .bar_4,.percent40 .bar_3{
+.percent5 .bar_6,.percent5 .bar_7,.percent5 .bar_8{
  background-position-y: -44rpx
 }
 
-.percent20 .bar_5,.percent20 .bar_4,.percent20 .bar_3,.percent20 .bar_2{
+.percent4 .bar_5,.percent4 .bar_6,.percent4 .bar_7,.percent4 .bar_8{
  background-position-y: -44rpx
+}
+
+.percent3 .bar_4,.percent3 .bar_5,.percent3 .bar_6,.percent3 .bar_7,.percent3 .bar_8{
+   background-position-y: -44rpx
+}
+
+.percent2 .bar_3,.percent2 .bar_4,.percent2 .bar_5,.percent2 .bar_6,.percent2 .bar_7,.percent2 .bar_8{
+  background-position-y: -44rpx;
+}
+
+.percent1 .bar_2,.percent1 .bar_3,.percent1 .bar_4,.percent1 .bar_5,.percent1 .bar_6,.percent1 .bar_7,.percent1 .bar_8{
+  background-position-y: -44rpx;
 }
 
 .percent0 .bar_img{
